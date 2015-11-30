@@ -11,7 +11,7 @@ function myjjgl(){
                                 "<th>产品期限</th>"+
                                 "<th>产品利率</th>"+ 
                             "</tr>"+
-                            "<tr>"+    
+                            "<tr onclick='check(this)'>"+    
                                 "<td><input type='radio'/></td>"+
                                 "<td>1</td>"+
                                 "<td></td>"+
@@ -19,9 +19,17 @@ function myjjgl(){
                                 "<td></td>"+
                                 "<td></td>"+
                             "</tr>"+
+                            "<tr onclick='check(this)'>"+    
+                            "<td><input type='radio'/></td>"+
+                            "<td>1</td>"+
+                            "<td></td>"+
+                            "<td></td>"+
+                            "<td></td>"+
+                            "<td></td>"+
+                        "</tr>"+
                         "</table>"+
-					"</div>"+
-					"<p><input type='button' class='btn btn-primary btn-large' value='确定' onclick='myjjgl2()'/></p>");
+                        "<p><input type='button' class='btn btn-primary btn-large' value='确定' onclick='myjjgl2()'/></p>"+
+					"</div>");
     $(".right").hide();
     $("#jjgl").show();    
 }
@@ -34,21 +42,26 @@ function myjjgl2(){
                                 "<th>客户名称</th>"+  
                                 "<th>证件号码</th>"+
                             "</tr>"+
-                            "<tr>"+    
+                            "<tr onclick='check(this)'>"+    
                                 "<td><input type='radio'/></td>"+
                                 "<td>1</td>"+
                                 "<td></td>"+
                             "</tr>"+
+                            "<tr onclick='check(this)'>"+    
+                            "<td><input type='radio'/></td>"+
+                            "<td>1</td>"+
+                            "<td></td>"+
+                        "</tr>"+
                         "</table>"+
-					"</div>"+
-					"<p><input type='button' class='btn btn-primary btn-large' value='确定' onclick='newUser1()'/></p>");
+                        "<p><input type='button' class='btn btn-primary btn-large' value='确定' onclick='newUser1()'/></p>"+
+					"</div>");
     $(".right").hide();
     $("#jjgl").show();
     
 }
 //新建进件1
 function newUser1(){
-    $("#khgl").html("<div class='title'>进件管理-新建进件</div>"+  
+    $("#khgl").html("<div class='title'>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;32014556952222&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;诚意贷</div>"+  
                     "<div class='content' style='padding-left:1em;'>" +
                         "<div class='box box3 box4' onclick='khxxzlcj()'>" +
                             "<img src='images/xxzl.png'/>" +
@@ -64,7 +77,7 @@ function newUser1(){
 }
 //客户信息资料采集
 function khxxzlcj(){
-    $("#khgl").html("<div class='title'>进件管理-新建进件</div>"+  
+    $("#khgl").html("<div class='title'>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;32014556952222&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;诚意贷</div>"+  
                     "<div class='content'>" +
                         "<table id='message1' class='cpTable'>"+
                             "<tr>"+                             
