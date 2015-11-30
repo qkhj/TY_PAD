@@ -70,7 +70,7 @@ function grxx(){
                               "<td><input type='text'/></td>"+
                           "</tr>"+
                       "</table>"+
-                      "<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khjbxx()'/></p>"+
+                      "<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
                   "</div>");
   $(".right").hide();
   $("#khgl").show();
@@ -124,92 +124,85 @@ function jtxx(){
                                 "<td><input type='text'/></td>"+
                             "</tr>"+
                         "</table>"+
-                        "<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khjbxx()'/></p>"+
+                        "<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
                     "</div>");
     $(".right").hide();
     $("#khgl").show();
   }
 //车产信息
 function ccxx(){
-  $("#khgl").html("<div class='title'>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102</div>"+  
-                  "<div class='content'>"+
-                      "<table class='cpTable'>"+
-                          "<tr>"+                             
-                              "<td style='width:25%;'>汽车车型</td>"+         
-                              "<td><input type='text'/></td>"+
-                          "</tr>"+
-                          "<tr>"+                             
-                              "<td>汽车车牌号</td>"+          
-                              "<td><input type='text'/></td>"+
-                          "</tr>"+
-                          "<tr>"+                             
-                              "<td>购买日期</td>"+  
-                              "<td><input type='date'/></td>"+
-                          "</tr>"+
-                          "<tr>"+                             
-                              "<td>购买价格</td>"+    
-                              "<td><input type='text'/></td>"+
-                          "</tr>"+
-                          "<tr>"+                             
-                              "<td>现值（公允值）</td>"+    
-                              "<td><input type='text'/></td>"+
-                          "</tr>"+
-                          "<tr>"+                             
-                              "<td>购置方式</td>"+           
-                              "<td>" +
-                                  "<select>" +
-                                      "<option>现金</option>" +
-                                  "</select>" +
-                               "</td>"+
-                          "</tr>"+
-                          "<tr>"+                             
-                              "<td>备注</td>"+    
-                              "<td><textarea></textarea></td>"+
-                          "</tr>"+
-                      "</table>"+
-                      "<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khjbxx()'/></p>"+
-                  "</div>");
-  $(".right").hide();
-  $("#khgl").show();
+	$("#khgl").html("<div class='title'>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102</div>"+  
+					"<div class='content'>"+
+						"<table id='ccxx' class='cpTable' style='text-align:center;'>"+
+                            "<tr>"+                             
+                                "<th>序号</th>"+  
+                                "<th>汽车车型</th>"+
+                                "<th>汽车车牌号</th>"+
+                                "<th>购买日期</th>"+
+                                "<th>购买价格</th>"+
+                                "<th>现值（公允值）</th>"+
+                                "<th>购置方式</th>"+
+                                "<th>备注</th>"+
+                            "</tr>"+
+                            "<tr>"+    
+                                "<td>1</td>"+
+								"<td><input type='text' class='addinput'/></td>"+
+								"<td><input type='text' class='addinput'/></td>"+
+								"<td><input type='date' class='addinput'/></td>"+
+								"<td><input type='text' class='addinput'/></td>"+
+								"<td><input type='text' class='addinput'/></td>"+
+								"<td>" +
+                                    "<select>" +
+                                        "<option>现金</option>" +
+                                    "</select>" +
+                                "</td>"+
+								"<td><input type='text' class='addinput'/></td>"+
+                            "</tr>"+
+                        "</table>"+
+                        "<p class='Left'>" +
+                            "<button class='btn btn-info btn-small' onclick='addTd(\"ccxx\")'><img src='images/add.png'/></button>" +
+                            "<button class='btn btn-info btn-small' onclick='removeTd(\"ccxx\")'><img src='images/del.png'/></button>" +
+                        "</p>"+
+						"<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
+					"</div>");
+	$(".right").hide();
+	$("#khgl").show();
 }
 //房产信息
 function fcxx(){
     $("#khgl").html("<div class='title'>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102</div>"+  
                     "<div class='content'>"+
-                        "<table class='cpTable'>"+
+						"<table id='fcxx' class='cpTable' style='text-align:center;'>"+
                             "<tr>"+                             
-                                "<td style='width:25%;'>房产地址</td>"+         
-                                "<td><input type='text'/></td>"+
-                            "</tr>"+                         
-                                "<td>面积</td>"+          
-                                "<td><input type='text'/></td>"+
+                                "<th>序号</th>"+  
+                                "<th>房产地址</th>"+
+                                "<th>面积</th>"+
+                                "<th>购买日期</th>"+
+                                "<th>购买价格</th>"+
+                                "<th>现值（公允值）</th>"+
+                                "<th>购置方式</th>"+
+                                "<th>备注</th>"+
                             "</tr>"+
-                            "<tr>"+                             
-                                "<td>购买日期</td>"+  
-                                "<td><input type='date'/></td>"+
-                            "</tr>"+
-                            "<tr>"+                             
-                                "<td>购买价格</td>"+    
-                                "<td><input type='text'/></td>"+
-                            "</tr>"+
-                            "<tr>"+                             
-                                "<td>现值（公允值）</td>"+    
-                                "<td><input type='text'/></td>"+
-                            "</tr>"+
-                            "<tr>"+                             
-                                "<td>购置方式</td>"+           
-                                "<td>" +
+                            "<tr>"+    
+                                "<td>1</td>"+
+								"<td><input type='text' class='addinput'/></td>"+
+								"<td><input type='text' class='addinput'/></td>"+
+								"<td><input type='date' class='addinput'/></td>"+
+								"<td><input type='text' class='addinput'/></td>"+
+								"<td><input type='text' class='addinput'/></td>"+
+								"<td>" +
                                     "<select>" +
                                         "<option>现金</option>" +
                                     "</select>" +
-                                 "</td>"+
-                            "</tr>"+
-                            "<tr>"+                             
-                                "<td>备注</td>"+    
-                                "<td><textarea></textarea></td>"+
+                                "</td>"+
+								"<td><input type='text' class='addinput'/></td>"+
                             "</tr>"+
                         "</table>"+
-                        "<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khjbxx()'/></p>"+
+                        "<p class='Left'>" +
+                            "<button class='btn btn-info btn-small' onclick='addTd(\"fcxx\")'><img src='images/add.png'/></button>" +
+                            "<button class='btn btn-info btn-small' onclick='removeTd(\"fcxx\")'><img src='images/del.png'/></button>" +
+                        "</p>"+
+                        "<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
                     "</div>");
     $(".right").hide();
     $("#khgl").show();
@@ -281,7 +274,7 @@ function jzxx(){
                                 "</td>"+
                             "</tr>"+
                         "</table>"+
-                        "<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khjbxx()'/></p>"+
+                        "<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
                     "</div>");
     $(".right").hide();
     $("#khgl").show();

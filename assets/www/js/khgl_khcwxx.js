@@ -1,5 +1,5 @@
 //客户财务信息
-function khcwxx(){
+/*function khcwxx(){
     $("#khgl").html("<div class='title'>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102</div>"+  
                     "<div class='content' style='margin-top:100px;'>" +
                         "<p>" +
@@ -57,7 +57,7 @@ function syb(){
                   "</div>");
   $(".right").hide();
   $("#khgl").show();
-}   
+}   */
 //点货单
 function dhd(){
   $("#khgl").html("<div class='title'>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102</div>"+  
@@ -81,7 +81,7 @@ function dhd(){
                               "<td><input type='text' class='addinput'/></td>"+
                           "</tr>"+
                       "</table>"+
-                      "<p><input type='button' class='btn btn-primary' value='保存并继续' onclick='khcwxx()'/></p>"+
+                      "<p><input type='button' class='btn btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
                   "</div>");
   $(".right").hide();
   $("#khgl").show();
@@ -115,7 +115,7 @@ function gdzcqd(){
                                 "<td><input type='text' class='addinput'/></td>"+
                             "</tr>"+
                         "</table>"+
-                        "<p><input type='button' class='btn btn-primary' value='保存并继续' onclick='khcwxx()'/></p>"+
+                        "<p><input type='button' class='btn btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
                     "</div>");
     $(".right").hide();
     $("#khgl").show();
@@ -149,7 +149,7 @@ function ysyfqd(){
                                 "<td><input type='text' class='addinput'/></td>"+
                             "</tr>"+
                         "</table>"+
-                        "<p><input type='button' class='btn btn-primary' value='保存并继续' onclick='khcwxx()'/></p>"+
+                        "<p><input type='button' class='btn btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
                     "</div>");
     $(".right").hide();
     $("#khgl").show();
@@ -183,7 +183,7 @@ function yfysqd(){
                                 "<td><input type='text' class='addinput'/></td>"+
                             "</tr>"+
                         "</table>"+
-                        "<p><input type='button' class='btn btn-primary' value='保存并继续' onclick='khcwxx()'/></p>"+
+                        "<p><input type='button' class='btn btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
                     "</div>");
     $(".right").hide();
     $("#khgl").show();
@@ -219,7 +219,7 @@ function fzxmmxqd(){
                               "<td><input type='text' class='addinput'/></td>"+
                           "</tr>"+
                       "</table>"+
-                      "<p><input type='button' class='btn btn-primary' value='保存并继续' onclick='khcwxx()'/></p>"+
+                      "<p><input type='button' class='btn btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
                   "</div>");
   $(".right").hide();
   $("#khgl").show();
