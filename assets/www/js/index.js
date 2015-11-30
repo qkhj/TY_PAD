@@ -3,6 +3,11 @@ function changeNav(obj){
     $(".left .nav li").css("background","#364860");
     $(obj).css("background","#2a3950");
 }
+//选择行
+function check(obj){
+    $("input[type=radio]").removeAttr("checked");
+    $(obj).find("input[type=radio]").attr('checked','checked');
+}
 //表格添加行
 function addTd(table){ 
 	if(table=="fcxx"){//房产信息

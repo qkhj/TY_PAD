@@ -3,7 +3,6 @@ function mykhgl(){
     $("#khgl").html("<div class='title'>客户管理</div>"+  
                     "<div class='content' style='padding-left:1em;'>" +
                         "<div class='box box1' onclick='newUser()'><img src='images/xjkh.png'/><span>新建客户</span></div>"+
-                        "<div class='box box2'><img src='images/clkh.png'/><span>存量客户</span></div>"+
                         "<div class='box box3' onclick='editUser()'><img src='images/khwh.png'/><span>客户维护</span></div>"+
                     "</div>");
     $(".right").hide();
