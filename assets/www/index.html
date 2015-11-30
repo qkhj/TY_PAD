@@ -34,31 +34,38 @@
 			<li onclick="changeNav(this);dc()"><img src="images/dc.png"/><span>登出</span></li>
 			<li id="product" onclick="changeNav(this);mycpgl()"><img src="images/cpgl.png"/><span>产品管理</span></li>
 			<li id="customer" onclick="changeNav(this);mykhgl()"><img src="images/khgl.png"/><span>客户管理</span></li>
+			<li id="customer" onclick="changeNav(this);myjjgl()"><img src="images/khgl.png"/><span>进件管理</span></li>
 			<li onclick="changeNav(this);mywdsy()"><img src="images/wdsy.png"/><span>我的首页</span></li>
 			<li onclick="changeNav(this);mywdjh()"><img src="images/wdjh.png"/><span>我的计划</span></li>
 		</ul>
 	</div>
 	
 
-	<div id="cp" class="right" style="display:none;padding-left:1em;">
-		<ul class='cplist'>
-            <li onclick="$('#product').click();mycpxx();"><img src='images/cp/1.jpg'/><span>产品1</span></li>
-            <li onclick="mycpxx()"><img src='images/cp/2.jpg'/><span>产品2</span></li>
-            <li onclick="mycpxx()"><img src='images/cp/3.jpg'/><span>产品3</span></li>
-            <li onclick="mycpxx()"><img src='images/cp/4.jpg'/><span>产品4</span></li>
-            <li onclick="mycpxx()"><img src='images/cp/5.jpg'/><span>产品5</span></li>
-            <li onclick="mycpxx()"><img src='images/cp/6.jpg'/><span>产品6</span></li>
-        </ul>
+	<div id="cp" class="right" style="display:none;">
+		<div class='title'>产品列表</div>
+		<div class='content' style="padding-left:1em">
+			<ul class='cplist'>
+	            <li onclick="$('#product').click();mycpxx();"><img src='images/cp/1.jpg'/><span>产品1</span></li>
+	            <li onclick="$('#product').click();mycpxx()"><img src='images/cp/2.jpg'/><span>产品2</span></li>
+	            <li onclick="$('#product').click();mycpxx()"><img src='images/cp/3.jpg'/><span>产品3</span></li>
+	            <li onclick="$('#product').click();mycpxx()"><img src='images/cp/4.jpg'/><span>产品4</span></li>
+	            <li onclick="$('#product').click();mycpxx()"><img src='images/cp/5.jpg'/><span>产品5</span></li>
+	            <li onclick="$('#product').click();mycpxx()"><img src='images/cp/6.jpg'/><span>产品6</span></li>
+	        </ul>
+		</div>
 	</div>
 	<div id="cpgl" class="right" style="display:none;">
 		<!-- 产品管理 -->
 	</div>
-	<div id="cpxx" class="right" style="display:none;">
-		<!-- 产品信息 -->
-	</div>
+	<!-- <div id="cpxx" class="right" style="display:none;">
+		产品信息
+	</div> -->
 	<div id="khgl" class="right" style="display:none;">
 		<!-- 客户管理 -->
 	</div>	
+	<div id="jjgl" class="right" style="display:none;">
+		<!-- 进件管理 -->
+	</div>
 	<div id="wdsy" class="right" style="display:none;">
 		<!-- 我的首页 -->
 	</div>
@@ -77,6 +84,7 @@
 <script src="js/khgl_khcwxx.js"></script>
 <script src="js/khgl_khcwxx_zcfzb.js"></script>
 <script src="js/khgl_khwh.js"></script>
+<script src="js/jjgl.js"></script>
 <script src="js/wdsy.js"></script>
 <script src="js/wdjh.js"></script>
 <script type="text/javascript">
