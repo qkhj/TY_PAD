@@ -67,7 +67,7 @@ function mycpxx(id,result){
 	        "</div>"
 		}
 	}
-    $("#cpxx").html(str);
+    $("#cpgl").html(str);
     $(".right").hide();
-    $("#cpxx").show();
+    $("#cpgl").show();
 }
