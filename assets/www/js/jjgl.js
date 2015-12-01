@@ -1,6 +1,6 @@
 //新建进件
 function myjjgl(){
-    $("#jjgl").html("<div class='title'>进件管理-新建进件</div>"+  
+    $("#jjgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>进件管理-新建进件<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
 					"<div class='content'>" +
 						"<table class='cpTable' style='text-align:center;'>"+
                             "<tr>"+                         
@@ -34,7 +34,7 @@ function myjjgl(){
     $("#jjgl").show();    
 }
 function myjjgl2(){
-    $("#jjgl").html("<div class='title'>进件管理-新建进件</div>"+  
+    $("#jjgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>进件管理-新建进件<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
 					"<div class='content'>" +
 						"<table class='cpTable' style='text-align:center;'>"+
                             "<tr>"+                         
@@ -61,7 +61,7 @@ function myjjgl2(){
 }
 //新建进件1
 function newUser1(){
-    $("#khgl").html("<div class='title'>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;32014556952222&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;诚意贷</div>"+  
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;32014556952222&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;诚意贷<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content' style='padding-left:1em;'>" +
                         "<div class='box box3 box4' onclick='khxxzlcj()'>" +
                             "<img src='images/xxzl.png'/>" +
@@ -77,7 +77,7 @@ function newUser1(){
 }
 //客户信息资料采集
 function khxxzlcj(){
-    $("#khgl").html("<div class='title'>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;32014556952222&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;诚意贷</div>"+  
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;32014556952222&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;诚意贷<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>" +
                         "<table id='message1' class='cpTable'>"+
                             "<tr>"+                             
@@ -243,7 +243,7 @@ function khxxzlcj(){
 }
 //客户影像资料采集
 function khyxzlcj(){
-    $("#khgl").html("<div class='title'>影像资料采集</div>"+  
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>影像资料采集<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content' style='margin-top:100px;'>" +
                         "<p><input type='button' class='tab' value='房产证' onclick='fcz()'/></p>"+
                         "<p><input type='button' class='tab' value='结婚证' onclick='jhz()'/></p>"+
@@ -256,7 +256,7 @@ function khyxzlcj(){
 }
 //客户影像资料采集-房产证
 function fcz(){
-    $("#khgl").html("<div class='title'>影像资料采集</div>"+  
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>影像资料采集<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>" +
                         "<table id='fcz' class='cpTable' style='text-align:center;'>"+
                             "<tr>"+                             
@@ -284,7 +284,7 @@ function fcz(){
 }
 //客户影像资料采集-结婚证
 function jhz(){
-    $("#khgl").html("<div class='title'>影像资料采集</div>"+  
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>影像资料采集<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>" +
                         "<table id='jhz' class='cpTable' style='text-align:center;'>"+
                             "<tr>"+                             
@@ -312,7 +312,7 @@ function jhz(){
 }
 //客户影像资料采集-征信报告
 function zxbg(){
-    $("#khgl").html("<div class='title'>影像资料采集</div>"+  
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>影像资料采集<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>" +
                         "<table id='zxbg' class='cpTable' style='text-align:center;'>"+
                             "<tr>"+                             
@@ -340,7 +340,7 @@ function zxbg(){
 }
 //客户影像资料采集-银行流水
 function yhls(){
-    $("#khgl").html("<div class='title'>影像资料采集</div>"+  
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>影像资料采集<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>" +
                         "<table id='yhls' class='cpTable' style='text-align:center;'>"+
                             "<tr>"+                             

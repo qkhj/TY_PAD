@@ -1,6 +1,6 @@
 //客户管理
 function mykhgl(){
-    $("#khgl").html("<div class='title'>客户管理</div>"+  
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>客户管理<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content' style='padding-left:1em;'>" +
                         "<div class='box box1' onclick='newUser()'><img src='images/xjkh.png'/><span>新建客户</span></div>"+
                         "<div class='box box3' onclick='editUser()'><img src='images/khwh.png'/><span>客户维护</span></div>"+
@@ -10,7 +10,7 @@ function mykhgl(){
 }
 //新建客户
 function newUser(){
-    $("#khgl").html("<div class='title'>客户管理-新建客户</div>"+  
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>客户管理-新建客户<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content' style='margin-top:100px;'>" +
                         "<p>客户姓名:<input type='text'/></p>"+
                         "<p>证件类型:<select><option>身份证</option></select></p>"+
@@ -25,7 +25,7 @@ function newUser(){
 }
 //客户维护
 function editUser(){
-    $("#khgl").html("<div class='title'>客户管理-客户维护</div>"+  
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>客户管理-客户维护<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content' style='margin-top:100px;'>" +
                         "<p><input type='button' class='tab' value='客户资料查询' onclick='khzlcx()'/></p>"+
                         "<p><input type='button' class='tab' value='客户维护计划' onclick='khwhjh()'/></p>"+

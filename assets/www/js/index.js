@@ -2,6 +2,12 @@
 function changeNav(obj){
     $(".left .nav li").css("background","#364860");
     $(obj).css("background","#2a3950");
+    $(".left").hide();
+    $(".right").css("left","0em");
+}
+function showNav(){
+    $(".left").show();
+    $(".right").css("left","7.1em");
 }
 //选择行
 function check(obj){

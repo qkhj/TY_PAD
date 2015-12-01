@@ -30,29 +30,26 @@
 	</div>
 	<div id="page1" class="left" style="display:none;">
 		<ul class="nav">
-			<li><span>欢迎您<br/>刘翔客户经理</span></li>
-			<li onclick="changeNav(this);dc()"><img src="images/dc.png"/><span>登出</span></li>
-			<li id="product" onclick="changeNav(this);mycpgl()"><img src="images/cpgl.png"/><span>产品管理</span></li>
+			<li onclick="changeNav(this);user()"><img src="images/user/01.png" class="user"/></li>
+			<li id="index" onclick="changeNav(this);mywdsy()"><img src="images/wdsy.png"/><span>我的首页</span></li>
+			<li id="product" onclick="changeNav(this);mycpgl()"><img src="images/cpgl.png"/><span>产品查询</span></li>
 			<li id="customer" onclick="changeNav(this);mykhgl()"><img src="images/khgl.png"/><span>客户管理</span></li>
-			<li id="customer" onclick="changeNav(this);myjjgl()"><img src="images/khgl.png"/><span>进件管理</span></li>
-			<li onclick="changeNav(this);mywdsy()"><img src="images/wdsy.png"/><span>我的首页</span></li>
+			<li id="customer" onclick="changeNav(this);myjjgl()"><img src="images/jjgl.png"/><span>进件管理</span></li>
 			<li onclick="changeNav(this);mywdjh()"><img src="images/wdjh.png"/><span>我的计划</span></li>
 		</ul>
 	</div>
-	
-
-	<div id="cp" class="right" style="display:none;">
-		<div class='title'>产品列表</div>
-		<div class='content' style="padding-left:1em">
-			<ul class='cplist'>
-	            <li onclick="$('#product').click();mycpxx();"><img src='images/cp/1.jpg'/><span>产品1</span></li>
-	            <li onclick="$('#product').click();mycpxx()"><img src='images/cp/2.jpg'/><span>产品2</span></li>
-	            <li onclick="$('#product').click();mycpxx()"><img src='images/cp/3.jpg'/><span>产品3</span></li>
-	            <li onclick="$('#product').click();mycpxx()"><img src='images/cp/4.jpg'/><span>产品4</span></li>
-	            <li onclick="$('#product').click();mycpxx()"><img src='images/cp/5.jpg'/><span>产品5</span></li>
-	            <li onclick="$('#product').click();mycpxx()"><img src='images/cp/6.jpg'/><span>产品6</span></li>
-	        </ul>
-		</div>
+	<div id="wdsy" class="right" style="display:none;">
+		<div class='title'><img src='images/show.png' onclick='showNav()'/>我的首页<img class='Right' src='images/dc.png' onclick='dc()'/></div> 
+        <div class='content' style='padding-left:1em;'>
+            <div class='box box5' onclick='khjjxx()'><img src='images/khjjxx.png'/><span>客户进件信息</span></div>
+            <div class='box box6' onclick='khyyzk()'><img src='images/khyyzk.png'/><span>客户运营状况</span></div>
+            <div class='box box7' onclick='wdzj()'><img src='images/wdzj.png'/><span>我的足迹</span></div>
+            <div class='box box8' onclick='tz()'><img src='images/tz.png'/><span>通知</span></div>
+            <div class='box box9' onclick='jljlxx()'><img src='images/jljlxx.png'/><span>奖励激励信息</span></div>
+         </div>
+	</div>
+	<div id="yhxx" class="right" style="display:none;">
+		<!-- 用户信息 -->
 	</div>
 	<div id="cpgl" class="right" style="display:none;">
 		<!-- 产品管理 -->
@@ -66,9 +63,7 @@
 	<div id="jjgl" class="right" style="display:none;">
 		<!-- 进件管理 -->
 	</div>
-	<div id="wdsy" class="right" style="display:none;">
-		<!-- 我的首页 -->
-	</div>
+	
 	<div id="wdjh" class="right" style="display:none;">
 		<!-- 我的计划 -->
 	</div>
@@ -77,6 +72,7 @@
 <script src="js/index.js"></script>
 <script src="js/factory.js"></script>
 <script src="js/login.js"></script>
+<script src="js/user.js"></script>
 <script src="js/cpgl.js"></script>
 <script src="js/khgl.js"></script>
 <script src="js/khgl_khjbxx.js"></script>
