@@ -1,27 +1,7 @@
-//客户基本信息
-function khjbxx(){
-  $("#khgl").html("<div class='title'>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102</div>"+  
-                  "<div class='content' style='margin-top:100px;'>" +
-                      "<p>" +
-                          "<input type='button' class='tab' value='个人信息' onclick='grxx()'/>" +
-                          "<input type='button' class='tab' value='房产信息' onclick='fcxx()'/>" +
-                      "</p>"+
-                      "<p>" +
-                          "<input type='button' class='tab' value='家庭信息' onclick='jtxx()'/>" +
-                          "<input type='button' class='tab' value='车产信息' onclick='ccxx()'/>" +
-                      "</p>" +
-                      "<p>" +
-                          "<input type='button' class='tab' value='联系人信息' onclick='lxrxx()'/>" +
-                          "<input type='button' class='tab' value='居住信息' onclick='jzxx()'/>" +
-                      "</p>" +
-                      "<p><input type='button' class='btn btn-large' value='返回' onclick='khxxzlcj()'/></p>" +
-                  "</div>");
-  $(".right").hide();
-  $("#khgl").show();
-}
+
 //个人信息
 function grxx(){
-  $("#khgl").html("<div class='title'>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102</div>"+  
+  $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                   "<div class='content'>"+
                       "<table class='cpTable'>"+
                           "<tr>"+                             
@@ -77,7 +57,7 @@ function grxx(){
 }
 //家庭信息
 function jtxx(){
-    $("#khgl").html("<div class='title'>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102</div>"+  
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>"+
                         "<table class='cpTable'>"+
                             "<tr>"+                             
@@ -131,7 +111,7 @@ function jtxx(){
   }
 //车产信息
 function ccxx(){
-	$("#khgl").html("<div class='title'>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102</div>"+  
+	$("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
 					"<div class='content'>"+
 						"<table id='ccxx' class='cpTable' style='text-align:center;'>"+
                             "<tr>"+                             
@@ -170,7 +150,7 @@ function ccxx(){
 }
 //房产信息
 function fcxx(){
-    $("#khgl").html("<div class='title'>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102</div>"+  
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>"+
 						"<table id='fcxx' class='cpTable' style='text-align:center;'>"+
                             "<tr>"+                             
@@ -209,7 +189,7 @@ function fcxx(){
   }
 //居住信息
 function jzxx(){
-    $("#khgl").html("<div class='title'>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102</div>"+  
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>"+
                         "<table class='cpTable'>"+
                             "<tr>"+                             

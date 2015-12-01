@@ -1,26 +1,7 @@
-//客户经营信息
-function khjyxx(){
-    $("#khgl").html("<div class='title'>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102</div>"+  
-            "<div class='content' style='margin-top:100px;'>" +
-                "<p>" +
-                    "<input type='button' class='tab' value='企业基本信息' onclick='qyjbxx()'/>" +
-                    "<input type='button' class='tab' value='企业业务信息' onclick='qyywxx()'/>" +
-                "</p>"+
-                "<p>" +
-                    "<input type='button' class='tab' value='企业店铺信息' onclick='qydpxx()'/>" +
-                    "<input type='button' class='tab' value='企业开户信息' onclick='qykhxx()'/>" +
-                "</p>" +
-                "<p>" +
-                    "<input type='button' class='tab' value='其他信息' onclick='qyqtxx()'/>" +
-                "</p>" +
-                "<p><input type='button' class='btn btn-large' value='返回' onclick='khxxzlcj()'/></p>" +
-            "</div>");
-$(".right").hide();
-$("#khgl").show();
-}
+
 //企业基本信息
 function qyjbxx(){
-  $("#khgl").html("<div class='title'>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102</div>"+  
+  $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                   "<div class='content'>"+
                       "<table class='cpTable'>"+
                           "<tr>"+                             
@@ -77,7 +58,7 @@ function qyjbxx(){
 
 //企业业务信息
 function qyywxx(){
-$("#khgl").html("<div class='title'>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102</div>"+  
+$("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                 "<div class='content'>"+
                     "<table class='cpTable'>"+
                         "<tr>"+                             
@@ -104,7 +85,7 @@ $("#khgl").show();
 }
 //企业店铺信息
 function qydpxx(){
-    $("#khgl").html("<div class='title'>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102</div>"+  
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>"+
                         "<table class='cpTable'>"+
                             "<tr>"+                             
@@ -167,7 +148,7 @@ function qydpxx(){
   }
 //企业开户信息
 function qykhxx(){
-  $("#khgl").html("<div class='title'>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102</div>"+  
+  $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                   "<div class='content'>"+
                       "<table class='cpTable'>"+
                           "<tr>"+                             
@@ -210,7 +191,7 @@ function qykhxx(){
 }
 //企业其他信息
 function qyqtxx(){
-    $("#khgl").html("<div class='title'>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102</div>"+  
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>"+
                         "<textarea placeholder='请在文本框内记录相关情况' style='width:98%;height:25em;margin:0;border-width:1px 0;border-radiuso:none;'></textarea>"+
                         "<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+

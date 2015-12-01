@@ -1,6 +1,6 @@
 //客户维护-客户资料查询
 function khzlcx(){
-    $("#khgl").html("<div class='title'>客户管理-客户资料查询</div>"+  
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>客户管理-客户资料查询<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content' style='margin-top:100px;'>" +
                         "<p>客户姓名:<input type='text'/></p>"+
                         "<p>证件类型:<select><option>身份证</option></select></p>"+
@@ -15,7 +15,7 @@ function khzlcx(){
 }
 //客户维护-客户资料查询-查询
 function khcx(){
-    $("#khgl").html("<div class='title'>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102</div>"+  
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>" +
                         "<table class='cpTable'>"+
                             "<tr>"+                             
@@ -38,7 +38,7 @@ function khcx(){
 
 //客户维护-客户维护计划
 function khwhjh(){
-    $("#khgl").html("<div class='title'>客户维护计划</div>"+  
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>客户维护计划<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>"+
                         "<table class='cpTable'>"+
                             "<tr>"+                             
@@ -73,7 +73,7 @@ function khwhjh(){
   }   
 //客户维护-客户维护日志
 function khwhrz(){
-    $("#khgl").html("<div class='title'>客户维护日志</div>"+  
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>客户维护日志<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>"+
                         "<table class='cpTable'>"+
                             "<tr>"+                             
@@ -103,7 +103,7 @@ function khwhrz(){
   }   
 //客户维护-客户催收日志
 function khcsrz(){
-    $("#khgl").html("<div class='title'>刘翔客户经理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001</div>"+  
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>李丽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>"+
                         "<table class='cpTable'>"+
                             "<tr>"+                             
@@ -137,7 +137,7 @@ function khcsrz(){
   }   
 //变更催收计划
 function bgcsjh(){
-    $("#khgl").html("<div class='title'>刘翔客户经理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001</div>"+ 
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>李丽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+ 
                     "<div class='content'>"+
                         "<table class='cpTable'>"+
                             "<tr>"+                             

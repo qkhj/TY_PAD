@@ -1,6 +1,6 @@
 //资产负债表-资产状况
 function zczk(){
-    $("#khgl").html("<div class='title'>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102</div>"+  
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>"+
                         "<table class='cpTable'>"+
                             "<tr>"+                             
@@ -51,7 +51,7 @@ $("#khgl").show();
 }
 //资产负债表-负债情况
 function fzqk(){
-    $("#khgl").html("<div class='title'>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102</div>"+  
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>"+
                         "<table class='cpTable'>"+
                             "<tr>"+                             

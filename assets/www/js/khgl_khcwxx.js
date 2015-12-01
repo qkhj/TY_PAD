@@ -1,66 +1,6 @@
-//客户财务信息
-/*function khcwxx(){
-    $("#khgl").html("<div class='title'>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102</div>"+  
-                    "<div class='content' style='margin-top:100px;'>" +
-                        "<p>" +
-                            "<input type='button' class='tab' value='资产负债表' onclick='zcfzb()'/>" +
-                            "<input type='button' class='tab' value='损益表' onclick='syb()'/>" +
-                        "</p>"+
-                        "<p>" +
-                            "<input type='button' class='tab' value='现金流表' onclick='xjlb()'/>" +
-                            "<input type='button' class='tab' value='点货单' onclick='dhd()'/>" +
-                        "</p>" +
-                        "<p>" +
-                            "<input type='button' class='tab' value='固定资产清单' onclick='gdzcqd()'/>" +
-                            "<input type='button' class='tab' value='应收预付清单' onclick='ysyfqd()'/>" +
-                        "</p>" +
-                        "<p>" +
-                            "<input type='button' class='tab' value='应付预收清单' onclick='yfysqd()'/>" +
-                            "<input type='button' class='tab' value='负债项目明细清单' onclick='fzxmmxqd()'/>" +
-                        "</p>" +
-                        "<p><input type='button' class='btn btn-large' value='返回' onclick='khxxzlcj()'/></p>" +
-                    "</div>");
-$(".right").hide();
-$("#khgl").show();
-}
-//资产负债表
-function zcfzb(){
-  $("#khgl").html("<div class='title'>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102</div>"+  
-                  "<div class='content' style='margin-top:100px;'>"+
-                      "<p>" +
-                          "<input type='button' class='tab' value='资产状况' onclick='zczk()'/>" +
-                          "<input type='button' class='tab' value='负债情况' onclick='fzqk()'/>" +
-                      "</p>"+
-                      "<p>" +
-                          "<input type='button' class='tab' value='权益状况' onclick='qyzk()'/>" +
-                          "<input type='button' class='tab' value='其他信息' onclick='zcfzqtxx()'/>" +
-                      "</p>" +
-                      "<p><input type='button' class='btn btn-large' value='返回' onclick='khcwxx()'/></p>"+
-                  "</div>");
-  $(".right").hide();
-  $("#khgl").show();
-}
-//损益表
-function syb(){
-  $("#khgl").html("<div class='title'>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102</div>"+  
-                  "<div class='content' style='margin-top:100px;'>"+
-                      "<p>" +
-                          "<input type='button' class='tab' value='利润表简表' onclick='lrbjb()'/>" +
-                      "</p>"+
-                      "<p>" +                          
-                          "<input type='button' class='tab' value='利润表标准表' onclick='lrbbzb()'/>" +
-                      "</p>"+
-                      "<p>" +                          
-                          "<input type='button' class='tab' value='其他信息' onclick='syqtxx()'/>" +
-                      "</p>" +
-                      "<p><input type='button' class='btn btn-large' value='返回' onclick='khcwxx()'/></p>"+
-                  "</div>");
-  $(".right").hide();
-  $("#khgl").show();
-}   */
 //点货单
 function dhd(){
-  $("#khgl").html("<div class='title'>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102</div>"+  
+  $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                   "<div class='content'>"+
                       "<table class='cpTable'>"+
                           "<tr>"+                             
@@ -88,7 +28,7 @@ function dhd(){
 }   
 //固定资产清单
 function gdzcqd(){
-    $("#khgl").html("<div class='title'>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102</div>"+  
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>"+
                         "<table class='cpTable'>"+
                             "<tr>"+                             
@@ -122,7 +62,7 @@ function gdzcqd(){
   }   
 //应收预付清单
 function ysyfqd(){
-    $("#khgl").html("<div class='title'>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102</div>"+  
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>"+
                         "<table class='cpTable'>"+
                             "<tr>"+                             
@@ -156,7 +96,7 @@ function ysyfqd(){
   }   
 //应付预收清单
 function yfysqd(){
-    $("#khgl").html("<div class='title'>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102</div>"+  
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>"+
                         "<table class='cpTable'>"+
                             "<tr>"+                             
@@ -191,7 +131,7 @@ function yfysqd(){
 
 //负债项目明细清单
 function fzxmmxqd(){
-  $("#khgl").html("<div class='title'>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102</div>"+  
+  $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                   "<div class='content'>"+
                       "<table class='cpTable'>"+
                           "<tr>"+                             

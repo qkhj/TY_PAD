@@ -1,4 +1,4 @@
-//产品管理
+//产品查询
 function mycpgl(){
 	//工厂模式
     var data = JSON.stringify({
@@ -13,7 +13,7 @@ function ProductListCallback(json){
 	var obj = $.evalJSON(json);
     var result = obj.result;
     var str = "";
-    str+="<div class='title'>产品管理</div>"+  
+    str+="<div class='title'><img src='images/show.png' onclick='showNav()'/>产品查询<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
 	    "<div class='content'>"+
 	    "<ul class='list'>"
     for(var i=0;i<result.length;i++){
@@ -36,7 +36,7 @@ function mycpxx(id,result){
 	var str="";
 	for(var i=0;i<result.length;i++){
 		if(id==result[i].id){
-			str="<div class='title'>"+result[i].productName+"</div>"+  
+			str="<div class='title'><img src='images/show.png' onclick='showNav()'/>"+result[i].productName+"<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
 	            "<div class='content'>"+
 	            "<table class='cpTable'>"+
 	                "<tr>"+                             
