@@ -1,6 +1,6 @@
 //我的计划
 function mywdjh(){
-    $("#wdjh").html("<div class='title'>我的计划</div>"+  
+    $("#wdjh").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>我的计划<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content' style='padding-left:1em;'>" +
                         "<div class='box box10' onclick='mykhwhjh()'><img src='images/khwhjh.png'/><span>客户维护计划</span></div>"+
                         "<div class='box box11' onclick='khcsjh()'><img src='images/khcsjh.png'/><span>客户催收计划</span></div>"+
@@ -12,7 +12,7 @@ function mywdjh(){
 }
 //客户维护计划
 function mykhwhjh(){
-    $("#wdjh").html("<div class='title'>刘翔客户经理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001</div>"+ 
+    $("#wdjh").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>李丽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+ 
                     "<div class='content'>"+
                         "<table class='cpTable' style='text-align:center;'>"+
                             "<tr>"+                             
@@ -29,7 +29,7 @@ function mykhwhjh(){
                             "</tr>"+
                             "<tr>"+    
                                 "<td>1</td>"+
-                                "<td>张三</td>"+
+                                "<td>郝俊芝</td>"+
                                 "<td></td>"+
                                 "<td></td>"+
                                 "<td>100000</td>"+
@@ -41,7 +41,7 @@ function mykhwhjh(){
                             "</tr>"+
                             "<tr>"+    
                                 "<td>1</td>"+
-                                "<td>张三</td>"+
+                                "<td>郝俊芝</td>"+
                                 "<td></td>"+
                                 "<td></td>"+
                                 "<td>100000</td>"+
@@ -53,7 +53,7 @@ function mykhwhjh(){
                             "</tr>"+
                             "<tr>"+    
                                 "<td>1</td>"+
-                                "<td>张三</td>"+
+                                "<td>郝俊芝</td>"+
                                 "<td></td>"+
                                 "<td></td>"+
                                 "<td>100000</td>"+
@@ -65,7 +65,7 @@ function mykhwhjh(){
                             "</tr>"+
                             "<tr>"+    
                                 "<td>1</td>"+
-                                "<td>张三</td>"+
+                                "<td>郝俊芝</td>"+
                                 "<td></td>"+
                                 "<td></td>"+
                                 "<td>100000</td>"+
@@ -77,7 +77,7 @@ function mykhwhjh(){
                             "</tr>"+
                             "<tr>"+    
                                 "<td>1</td>"+
-                                "<td>张三</td>"+
+                                "<td>郝俊芝</td>"+
                                 "<td></td>"+
                                 "<td></td>"+
                                 "<td>100000</td>"+
@@ -95,7 +95,7 @@ function mykhwhjh(){
   }   
 //客户催收计划
 function khcsjh(){
-    $("#wdjh").html("<div class='title'>刘翔客户经理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001</div>"+ 
+    $("#wdjh").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>李丽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+ 
                     "<div class='content'>"+
                         "<table class='cpTable' style='text-align:center;'>"+
                             "<tr>"+                             
@@ -112,7 +112,7 @@ function khcsjh(){
                             "</tr>"+
                             "<tr>"+    
                                 "<td>1</td>"+
-                                "<td>张三</td>"+
+                                "<td>郝俊芝</td>"+
                                 "<td></td>"+
                                 "<td></td>"+
                                 "<td>100000</td>"+
@@ -130,7 +130,7 @@ function khcsjh(){
   }   
 //培训计划
 function pxjh(){
-    $("#wdjh").html("<div class='title'>刘翔客户经理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001</div>"+ 
+    $("#wdjh").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>李丽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+ 
                     "<div class='content'>"+
                         "<table class='cpTable' style='text-align:center;'>"+
                             "<tr>"+                             
@@ -144,7 +144,7 @@ function pxjh(){
                             "</tr>"+
                             "<tr>"+    
                                 "<td>1</td>"+
-                                "<td>刘翔客户经理</td>"+
+                                "<td>李丽</td>"+
                                 "<td>微贷知识</td>"+
                                 "<td></td>"+
                                 "<td>2015-12-12</td>"+
@@ -159,7 +159,7 @@ function pxjh(){
   }   
   //工作计划
 function gzjh(){
-    $("#wdjh").html("<div class='title'>刘翔客户经理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001</div>"+ 
+    $("#wdjh").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>李丽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+ 
                     "<div class='content'>"+
                         "<table id='gzjh' class='cpTable' style='text-align:center;'>"+
                             "<tr>"+                             

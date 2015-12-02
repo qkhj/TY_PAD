@@ -21,15 +21,17 @@ function checkLoginCallback(json){
     }
     var session = window.sessionStorage;//有些不支持sessionStorage，而是globalStroage.
     session.setItem("user_id",obj.userId);*/
-    $("#page1").show();
+    //$("#page1").show();
     $("#login").hide();
-    $("#cp").show();
+    $("#wdsy").show();
+    $("#index").click();
 }
 
     
 //登出
 function dc(){
-    $("#page1").hide();
     $("#login").show();
     $(".right").hide();
+    $(".left .nav li").css("background","#364860");
+    $(".left").hide();
 }

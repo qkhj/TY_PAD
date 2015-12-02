@@ -1,6 +1,6 @@
 //我的首页
 function mywdsy(){
-    $("#wdsy").html("<div class='title'>我的首页</div>"+  
+    $("#wdsy").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>我的首页<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content' style='padding-left:1em;'>" +
                         "<div class='box box5' onclick='khjjxx()'><img src='images/khjjxx.png'/><span>客户进件信息</span></div>"+
                         "<div class='box box6' onclick='khyyzk()'><img src='images/khyyzk.png'/><span>客户运营状况</span></div>"+
@@ -13,7 +13,7 @@ function mywdsy(){
 }
 //客户进件信息
 function khjjxx(){
-    $("#wdsy").html("<div class='title'>刘翔客户经理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001</div>"+  
+    $("#wdsy").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>李丽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>" +
                         "<table class='cpTable'>"+
                             "<tr>"+                             
@@ -36,7 +36,7 @@ function khjjxx(){
 }
 //客户进件信息-补充进件
 function bcjj(){
-    $("#wdsy").html("<div class='title'>刘翔客户经理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001</div>"+ 
+    $("#wdsy").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>李丽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+ 
                     "<div class='content'>"+
                         "<table class='cpTable' style='text-align:center;'>"+
                             "<tr>"+                             
@@ -49,7 +49,7 @@ function bcjj(){
                             "</tr>"+
                             "<tr>"+    
                                 "<td>1</td>"+
-                                "<td>张三</td>"+
+                                "<td>郝俊芝</td>"+
                                 "<td></td>"+
                                 "<td><img src='images/success.png'/></td>"+
                                 "<td></td>"+
@@ -57,7 +57,7 @@ function bcjj(){
                             "</tr>"+
                             "<tr>"+    
                                 "<td>2</td>"+
-                                "<td>张三</td>"+
+                                "<td>郝俊芝</td>"+
                                 "<td></td>"+
                                 "<td></td>"+
                                 "<td><img src='images/wrong.png'/></td>"+
@@ -72,7 +72,7 @@ function bcjj(){
   
 //客户进件信息-拒绝进件
 function jjjj(){
-    $("#wdsy").html("<div class='title'>刘翔客户经理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001</div>"+ 
+    $("#wdsy").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>李丽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+ 
                     "<div class='content'>"+
                         "<table class='cpTable' style='text-align:center;'>"+
                             "<tr>"+                             
@@ -84,14 +84,14 @@ function jjjj(){
                             "</tr>"+
                             "<tr>"+    
                                 "<td>1</td>"+
-                                "<td>张三</td>"+
+                                "<td>郝俊芝</td>"+
                                 "<td></td>"+
                                 "<td><img src='images/success.png'/></td>"+
                                 "<td></td>"+
                             "</tr>"+
                             "<tr>"+    
                                 "<td>2</td>"+
-                                "<td>张三</td>"+
+                                "<td>郝俊芝</td>"+
                                 "<td></td>"+
                                 "<td></td>"+
                                 "<td><img src='images/wrong.png'/></td>"+
@@ -104,7 +104,7 @@ function jjjj(){
   }   
 //客户运营状况
 function khyyzk(){
-    $("#wdsy").html("<div class='title'>刘翔客户经理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001</div>"+  
+    $("#wdsy").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>李丽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>" +
                         "<table class='cpTable'>"+
                             "<tr>"+                             
@@ -143,7 +143,7 @@ function khyyzk(){
 }
 //我的足迹
 function wdzj(){
-    $("#wdsy").html("<div class='title'>刘翔客户经理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001</div>"+  
+    $("#wdsy").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>李丽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>" +
                         "<div class='map'>地图</div>"+
                         "<p><input type='button' class='btn btn-large' value='返回' onclick='mywdsy()'/></p>" +
@@ -153,7 +153,7 @@ function wdzj(){
 }
 //通知
 function tz(){
-    $("#wdsy").html("<div class='title'>刘翔客户经理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001</div>"+  
+    $("#wdsy").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>李丽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>" +
                         "<table class='cpTable'>"+
                             "<tr>"+                             
@@ -196,7 +196,7 @@ function tz(){
 }
 //通知-审贷会通知
 function sdhtz(){
-    $("#wdsy").html("<div class='title'>刘翔客户经理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001</div>"+  
+    $("#wdsy").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>李丽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>" +
                         "<table class='cpTable'>"+
                             "<tr>"+                             
@@ -223,7 +223,7 @@ function sdhtz(){
 }
 //通知-培训通知
 function pxtz(){
-    $("#wdsy").html("<div class='title'>刘翔客户经理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001</div>"+  
+    $("#wdsy").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>李丽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>" +
                        "<table class='cpTable' style='text-align:center;'>"+
                             "<tr>"+                             
@@ -250,7 +250,7 @@ function pxtz(){
 }
 //通知-分配进件通知
 function fpjjtz(){
-    $("#wdsy").html("<div class='title'>刘翔客户经理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001</div>"+  
+    $("#wdsy").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>李丽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>" +
                        "<table class='cpTable' style='text-align:center;'>"+
                             "<tr>"+                             
@@ -277,7 +277,7 @@ function fpjjtz(){
 }
 //通知-风险事项通知
 function fxsxtz(){
-    $("#wdsy").html("<div class='title'>刘翔客户经理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001</div>"+  
+    $("#wdsy").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>李丽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>" +
                        "<table class='cpTable' style='text-align:center;'>"+
                             "<tr>"+                             
@@ -300,7 +300,7 @@ function fxsxtz(){
 }
 //通知-催收客户通知
 function cskhtz(){
-    $("#wdsy").html("<div class='title'>刘翔客户经理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001</div>"+  
+    $("#wdsy").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>李丽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>" +
                        "<table class='cpTable' style='text-align:center;'>"+
                             "<tr>"+                        
@@ -329,7 +329,7 @@ function cskhtz(){
 }
 //通知-客户资料变更通知
 function khzlbgtz(){
-    $("#wdsy").html("<div class='title'>刘翔客户经理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001</div>"+  
+    $("#wdsy").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>李丽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>" +
                        "<table class='cpTable' style='text-align:center;'>"+
                             "<tr>"+                        
@@ -357,7 +357,7 @@ function khzlbgtz(){
 
 //奖励激励信息
 function jljlxx(){
-    $("#wdsy").html("<div class='title'>刘翔客户经理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001</div>"+  
+    $("#wdsy").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>李丽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>" +
                         "<table class='cpTable'>"+
                             "<tr>"+                             
