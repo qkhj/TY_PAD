@@ -29,7 +29,7 @@ function mykhwhjh(){
                             "</tr>"+
                             "<tr>"+    
                                 "<td>1</td>"+
-                                "<td>张三</td>"+
+                                "<td>郝俊芝</td>"+
                                 "<td></td>"+
                                 "<td></td>"+
                                 "<td>100000</td>"+
@@ -41,7 +41,7 @@ function mykhwhjh(){
                             "</tr>"+
                             "<tr>"+    
                                 "<td>1</td>"+
-                                "<td>张三</td>"+
+                                "<td>郝俊芝</td>"+
                                 "<td></td>"+
                                 "<td></td>"+
                                 "<td>100000</td>"+
@@ -53,7 +53,7 @@ function mykhwhjh(){
                             "</tr>"+
                             "<tr>"+    
                                 "<td>1</td>"+
-                                "<td>张三</td>"+
+                                "<td>郝俊芝</td>"+
                                 "<td></td>"+
                                 "<td></td>"+
                                 "<td>100000</td>"+
@@ -65,7 +65,7 @@ function mykhwhjh(){
                             "</tr>"+
                             "<tr>"+    
                                 "<td>1</td>"+
-                                "<td>张三</td>"+
+                                "<td>郝俊芝</td>"+
                                 "<td></td>"+
                                 "<td></td>"+
                                 "<td>100000</td>"+
@@ -77,7 +77,7 @@ function mykhwhjh(){
                             "</tr>"+
                             "<tr>"+    
                                 "<td>1</td>"+
-                                "<td>张三</td>"+
+                                "<td>郝俊芝</td>"+
                                 "<td></td>"+
                                 "<td></td>"+
                                 "<td>100000</td>"+
@@ -112,7 +112,7 @@ function khcsjh(){
                             "</tr>"+
                             "<tr>"+    
                                 "<td>1</td>"+
-                                "<td>张三</td>"+
+                                "<td>郝俊芝</td>"+
                                 "<td></td>"+
                                 "<td></td>"+
                                 "<td>100000</td>"+

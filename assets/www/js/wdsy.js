@@ -49,7 +49,7 @@ function bcjj(){
                             "</tr>"+
                             "<tr>"+    
                                 "<td>1</td>"+
-                                "<td>张三</td>"+
+                                "<td>郝俊芝</td>"+
                                 "<td></td>"+
                                 "<td><img src='images/success.png'/></td>"+
                                 "<td></td>"+
@@ -57,7 +57,7 @@ function bcjj(){
                             "</tr>"+
                             "<tr>"+    
                                 "<td>2</td>"+
-                                "<td>张三</td>"+
+                                "<td>郝俊芝</td>"+
                                 "<td></td>"+
                                 "<td></td>"+
                                 "<td><img src='images/wrong.png'/></td>"+
@@ -84,14 +84,14 @@ function jjjj(){
                             "</tr>"+
                             "<tr>"+    
                                 "<td>1</td>"+
-                                "<td>张三</td>"+
+                                "<td>郝俊芝</td>"+
                                 "<td></td>"+
                                 "<td><img src='images/success.png'/></td>"+
                                 "<td></td>"+
                             "</tr>"+
                             "<tr>"+    
                                 "<td>2</td>"+
-                                "<td>张三</td>"+
+                                "<td>郝俊芝</td>"+
                                 "<td></td>"+
                                 "<td></td>"+
                                 "<td><img src='images/wrong.png'/></td>"+

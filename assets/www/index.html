@@ -38,14 +38,23 @@
 			<li onclick="changeNav(this);mywdjh()"><img src="images/wdjh.png"/><span>我的计划</span></li>
 		</ul>
 	</div>
-	<div id="wdsy" class="right" style="display:none;">
+	<div id="wdsy" class="right" style="display:none;bottom:0;">
 		<div class='title'><img src='images/show.png' onclick='showNav()'/>我的首页<img class='Right' src='images/dc.png' onclick='dc()'/></div> 
-        <div class='content' style='padding-left:1em;'>
-            <div class='box box5' onclick='khjjxx()'><img src='images/khjjxx.png'/><span>客户进件信息</span></div>
-            <div class='box box6' onclick='khyyzk()'><img src='images/khyyzk.png'/><span>客户运营状况</span></div>
-            <div class='box box7' onclick='wdzj()'><img src='images/wdzj.png'/><span>我的足迹</span></div>
-            <div class='box box8' onclick='tz()'><img src='images/tz.png'/><span>通知</span></div>
-            <div class='box box9' onclick='jljlxx()'><img src='images/jljlxx.png'/><span>奖励激励信息</span></div>
+        <div class='content' style='margin-bottom:0;'>
+        	<table class='ListTb'>
+        		<tr>
+        			<td><img src='images/khjjxx1.png'/><span>客户进件信息</span></td>
+        			<td><img src='images/khyyzk1.png'/><span>客户运营状况</span></td>        			
+        			<td><img src='images/wdzj.png'/><span>我的足迹</span></td>
+        		</tr>
+        		<tr>
+        			<td><img src='images/tz1.png'/><span>通知</span></td>
+        			<td><img src='images/jljlxx1.png'/><span>奖励激励信息</span></td>        			
+        			<td><img src='images/qdgx.png'/></td>
+        		</tr>
+        	</table>
+
+           
          </div>
 	</div>
 	<div id="yhxx" class="right" style="display:none;">
@@ -75,15 +84,131 @@
 <script src="js/user.js"></script>
 <script src="js/cpgl.js"></script>
 <script src="js/khgl.js"></script>
-<script src="js/khgl_khjbxx.js"></script>
-<script src="js/khgl_khjyxx.js"></script>
-<script src="js/khgl_khcwxx.js"></script>
-<script src="js/khgl_khcwxx_zcfzb.js"></script>
-<script src="js/khgl_khwh.js"></script>
+<script src="js/khjbxx.js"></script>
+<script src="js/khjyxx.js"></script>
+<script src="js/khcwxx.js"></script>
+<script src="js/khcwxx_zcfzb.js"></script>
+<script src="js/khwh.js"></script>
 <script src="js/jjgl.js"></script>
 <script src="js/wdsy.js"></script>
 <script src="js/wdjh.js"></script>
+
+
+
+
+<script type="text/javascript" charset="utf-8" src="apis/phonegap-1.4.1.js"></script>
+<script type="text/javascript" src="js/CardPlugin.js"></script>
+<script type="text/javascript" src="js/ImagePlugin.js"></script>
+<script type="text/javascript" src="js/DBPlugin.js"></script>
 <script type="text/javascript">
 	
+
+  	//phonegap调用相机部分
+	var pictureSource;      //图片来源
+	var destinationType;        //设置返回值的格式
+	var mediaType;
+	var idtmp;
+	
+	//********************************照片******************************
+	//事件触发函数
+	function getMedia(id,type) {
+	    idtmp=id;
+	    pictureSource=navigator.camera.PictureSourceType;
+	    destinationType=navigator.camera.DestinationType;
+	    mediaType=navigator.camera.MediaType;
+	    
+	    // 从设定的来源处获取图像文件URI
+	    navigator.camera.getPicture(onURISuccess, onFail, {quality:50,
+	    destinationType: destinationType.FILE_URI,
+	    sourceType: pictureSource.PHOTOLIBRARY,mediaType:mediaType.ALLMEDIA});
+	    
+	    // 当成功得到一张照片的URI后被调用
+		function onURISuccess(URI) {
+		    window.resolveLocalFileSystemURI(URI, gotFileEntry, onFileFail);
+		    
+		    //转换URI到全路径
+			function gotFileEntry(fileEntry) {
+				var fpath = fileEntry.fullPath;
+				
+				window.plugins.imagePluginAPI.startActivity(testSuccess,testError, fpath);
+				function testSuccess(res){
+					var url = document.getElementById(idtmp);
+					url.value = res;
+					//alert(json);
+				}
+				function testError(){
+					alert("error");
+				}
+				
+				//工厂模式
+			    //var media = crud.dom.factory("MEDIA");
+			    //media.doMedia(fpath,type,UpLoadCallBack,"上传失败！");
+			    
+			    //function UpLoadCallBack(res){
+			    //    var url = document.getElementById(idtmp);
+			    //    url.value = res.response;
+			    //}
+			}
+			//文件操作失败
+			function onFileFail(error) { 
+				toLog("error code: "+ error.code);
+			};
+		}
+		
+		// 当有错误发生时触发此函数
+		function onFail(mesage) {
+		    alert('Failed because: ' + message);
+		}
+	}
+	
+	//********************************拍照、录像、录音******************************
+	// “Capture”按钮点击事件触发函数
+	function capture(id,type) {
+		idtmp=id;
+	    // 启动设备的摄像头应用程
+	    // 允许用户最多采集1个图像
+	    if(type == "img"){
+	    	navigator.device.capture.captureImage(captureSuccess, captureError, {limit: 1});
+	    }
+	    else if(type == "video"){
+	    	navigator.device.capture.captureVideo(captureSuccess, captureError, {limit: 1});
+	    }
+	    else if(type == "voice"){
+	    	navigator.device.capture.captureAudio(captureSuccess, captureError, {limit: 1}); 
+	    }
+	    
+	    // 采集操作成功完成后的回调函数
+		function captureSuccess(mediaFiles) { 
+		    var i, len; 
+		    for (i = 0, len = mediaFiles.length; i < len; i += 1) { 
+		        //uploadFile(mediaFiles[i]); 
+		        
+		        window.plugins.imagePluginAPI.startActivity(testSuccess,testError, mediaFiles[i].fullPath);
+				function testSuccess(res){
+					var url = document.getElementById(idtmp);
+					url.value = res;
+					//alert(json);
+				}
+				function testError(){
+					alert("error");
+				}
+				
+		        //工厂模式
+			    //var mediaFile = crud.dom.factory("MEDIAFILE");
+			    //mediaFile.doMediaFile(mediaFiles[i],type,UpLoadCallBack,"上传失败！");
+			    
+			    //function UpLoadCallBack(res){
+			    //    var url = document.getElementById(idtmp);
+			    //    url.value = res.response;
+			    //}
+		    }      
+		} 
+		
+		// 采集操作出错后的回调函数
+		function captureError(error) { 
+		    var msg = 'An error occurred during capture: ' + error.code; 
+		    navigator.notification.alert(msg, null, 'Uh oh!'); 
+		} 
+	}
 	
 </script>

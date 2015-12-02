@@ -1,9 +1,12 @@
 *{margin:0;padding:0;font-size:18px;}
+html, body {   height: 100%; }
 input[type=text],select,input[type=date],input[type=time],textarea{width:200px;padding:5px 0;margin:0 10px;border:1px solid #d1d7e6;border-radius:0.5em;}
 select{width:202px;height:33px;}
 label{margin:0 10px;}
 textarea{resize: none;}
 input[type=date],input[type=time]{width:150px;padding:5px;}
+input[type=file]{width:90px;}
+input.readonly{width:300px;background:#ddd}
 input[type=text].addinput,input[type=date].addinput{width:80%;margin:0;padding:5px;}
 button.btn{margin:15px;font-size:20px;line-height:35px;width:150px;}
 button.btn img{vertical-align:text-bottom;width:25px;height:25px;}
@@ -25,8 +28,14 @@ p.Left{text-align:left;}
 #cp .cplist li img{width:17em;height:17em;}
 #cp .cplist li span{display:block;width:17em;line-height:3em;background:rgba(255,255,255,0.7);position:relative;margin-top:-3.25em;}
 
-
-
+.ListTb{position:absolute;top:50px;width:100%;height:93.5%;border-collapse:collapse;background:#fff;}
+.ListTb td{border:1px solid #c1c1c1;text-align:center;}
+.ListTb img{display:block;margin:0 auto;margin-bottom:10px;}
+.ListTb .box1{background:#43628d}
+.ListTb .box2{background:#6f4e89;}
+.ListTb .box3{background:#1a84a5;}
+.ListTb .box4{background:#cbaeee;}
+.ListTb .box5{background:#0e86b0;}
 /*<!--标题-->*/
 .title{position:fixed;top:0;width:100%;padding-left:10px;background:-webkit-gradient(linear,0 0,0 100%,from(#5b7598),to(#364860));color:#fff;font-size:20px;font-weight:bold;line-height:50px;border-bottom:1px solid #456f9a;}
 .content{margin-top:51px;margin-bottom:50px;}
@@ -47,7 +56,7 @@ p.Left{text-align:left;}
 .cpTable tr th{background:#557cb3;color:#fff;font-size:18px;}
 .cpTable tr:nth-child(2n+1){background:#dceafc;}
 .cpTable tr td,.cpTable tr th{padding:10px;border:1px solid #a5c1e5;}
-.cpTable input[type=button]{margin:5px 10px;display:block;}
+.cpTable input[type=button]{margin:5px 10px;}
 
 /*<!--客户管理-->*/
 .box{color:#fff;width:10em;height:10em;border:none;border-radius:1em;float:left;margin:1em 1em 0 0;text-align:center;}
@@ -87,5 +96,5 @@ input[type=button]{margin:0 10px;}
 .label-warning {background-color: #f89406;}
 .label-inverse{background-color: #333;}
 
-#message1 tr td,#message2 tr td,#message3 tr td{font-size:14px;}
+#message1 td,#message2 td,#message3 td{text-align:center;}
 #message1 .label,#message2 .label,#message3 .label{font-size:14px;}
