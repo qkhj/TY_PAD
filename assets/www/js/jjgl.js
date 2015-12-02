@@ -13,20 +13,44 @@ function myjjgl(){
                             "</tr>"+
                             "<tr onclick='check(this)'>"+    
                                 "<td><input type='radio'/></td>"+
-                                "<td>1</td>"+
-                                "<td></td>"+
-                                "<td></td>"+
-                                "<td></td>"+
-                                "<td></td>"+
+                                "<td>集群通</td>"+
+                                "<td>经营贷款</td>"+
+                                "<td>5000元—500万元</td>"+
+                                "<td>2018-01-01</td>"+
+                                "<td>8%</td>"+
                             "</tr>"+
                             "<tr onclick='check(this)'>"+    
-                            "<td><input type='radio'/></td>"+
-                            "<td>1</td>"+
-                            "<td></td>"+
-                            "<td></td>"+
-                            "<td></td>"+
-                            "<td></td>"+
-                        "</tr>"+
+                                "<td><input type='radio'/></td>"+
+                                "<td>繁星通</td>"+
+                                "<td>经营贷款</td>"+
+                                "<td>5000元—500万元</td>"+
+                                "<td>2018-01-01</td>"+
+                                "<td>8%</td>"+
+                            "</tr>"+
+                            "<tr onclick='check(this)'>"+    
+                                "<td><input type='radio'/></td>"+
+                                "<td>信薪通</td>"+
+                                "<td>消费贷款</td>"+
+                                "<td>5000元—100万元</td>"+
+                                "<td>2018-01-01</td>"+
+                                "<td>8%</td>"+
+                            "</tr>"+
+                            "<tr onclick='check(this)'>"+    
+                                "<td><input type='radio'/></td>"+
+                                "<td>个税通</td>"+
+                                "<td>消费贷款</td>"+
+                                "<td>5000元—100万元</td>"+
+                                "<td>2018-01-01</td>"+
+                                "<td>8%</td>"+
+                            "</tr>"+
+                            "<tr onclick='check(this)'>"+    
+                                "<td><input type='radio'/></td>"+
+                                "<td>税信通</td>"+
+                                "<td>经营性贷款</td>"+
+                                "<td>5000元—100万元</td>"+
+                                "<td>2018-01-01</td>"+
+                                "<td>8%</td>"+
+                            "</tr>"+
                         "</table>"+
                         "<p><input type='button' class='btn btn-primary btn-large' value='确定' onclick='myjjgl2()'/></p>"+
 					"</div>");
@@ -44,14 +68,14 @@ function myjjgl2(){
                             "</tr>"+
                             "<tr onclick='check(this)'>"+    
                                 "<td><input type='radio'/></td>"+
-                                "<td>1</td>"+
-                                "<td></td>"+
+                                "<td>郝俊芝</td>"+
+                                "<td>320404197702656264</td>"+
                             "</tr>"+
                             "<tr onclick='check(this)'>"+    
-                            "<td><input type='radio'/></td>"+
-                            "<td>1</td>"+
-                            "<td></td>"+
-                        "</tr>"+
+                                "<td><input type='radio'/></td>"+
+                                "<td>阎育强</td>"+
+                                "<td>320404198002356125</td>"+
+                            "</tr>"+
                         "</table>"+
                         "<p><input type='button' class='btn btn-primary btn-large' value='确定' onclick='newUser1()'/></p>"+
 					"</div>");
@@ -61,13 +85,13 @@ function myjjgl2(){
 }
 //新建进件1
 function newUser1(){
-    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;32014556952222&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;诚意贷<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
-                    "<div class='content' style='padding-left:1em;'>" +
-                        "<div class='box box3 box4' onclick='khxxzlcj()'>" +
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>郝俊芝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;32014556952222&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;集群通<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
+                    "<div class='content' style='padding-top:9em;text-align:center;'>" +
+                        "<div class='box box4' onclick='khxxzlcj()' style='float:none;margin-right:50px;display:inline-block;'>" +
                             "<img src='images/xxzl.png'/>" +
                             "<span>客户信息资料采集</span>"+
                         "</div>"+
-                        "<div class='box box3 box4' onclick='khyxzlcj()'>" +
+                        "<div class='box box4' onclick='khyxzlcj()' style='float:none;display:inline-block;'>" +
                             "<img src='images/yxzl.png'/>" +
                             "<span>客户影像资料采集</span>"+
                         "</div>"+                      
@@ -77,7 +101,7 @@ function newUser1(){
 }
 //客户信息资料采集
 function khxxzlcj(){
-    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;32014556952222&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;诚意贷<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>郝俊芝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;32014556952222&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;集群通<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>" +
                         "<table id='message1' class='cpTable'>"+
                             "<tr>"+                             
@@ -85,36 +109,36 @@ function khxxzlcj(){
                             "</tr>"+
                             "<tr>"+                             
                                 "<td>个人信息<span class='label label-success'>已录入</span></td>"+             
-                                "<td>房产信息<span class='label label-important'>未录入</span></td>"+
+                                "<td>房产信息<span class='label label-success'>已录入</span></td>"+
                                 "<td>家庭信息<span class='label label-success'>已录入</span></td>"+ 
-                                "<td>车产信息<span class='label label-success'>已录入</span></td>"+ 
-                                "<td>联系人信息<span class='label label-important'>未录入</span></td>"+ 
-                                "<td>居住信息<span class='label label-important'>未录入</span></td>"+
+                                "<td>车产信息<span class='label label-important'>未录入</span></td>"+ 
+                                "<td>联系人信息(缺)<span class='label label-important'>未录入</span></td>"+ 
+                                "<td>居住信息<span class='label label-success'>已录入</span></td>"+
                             "</tr>"+
                             "<tr>"+       
                                 "<td>" +
-                                    "<input type='button' class='btn btn-info' value='添加' onclick='grxx()'/>" +
-                                    "<input type='button' class='btn btn-warning' value='查看' onclick=''/>" +
+                                    "<input type='button' class='btn btn-info' value='添加' onclick='grxx_add()'/>" +
+                                    "<input type='button' class='btn btn-warning' value='查看' onclick='grxx_edit()'/>" +
                                 "</td>"+         
                                 "<td>" +
-                                    "<input type='button' class='btn btn-info' value='添加' onclick='fcxx()'/>" +
-                                    "<input type='button' class='btn btn-warning' value='查看' onclick=''/>" +
+                                    "<input type='button' class='btn btn-info' value='添加' onclick='fcxx_add()'/>" +
+                                    "<input type='button' class='btn btn-warning' value='查看' onclick='fcxx_edit()'/>" +
                                 "</td>"+
                                 "<td>" +
-                                    "<input type='button' class='btn btn-info' value='添加' onclick='jtxx()'/>" +
-                                    "<input type='button' class='btn btn-warning' value='查看' onclick=''/>" +
+                                    "<input type='button' class='btn btn-info' value='添加' onclick='jtxx_add()'/>" +
+                                    "<input type='button' class='btn btn-warning' value='查看' onclick='jtxx_edit()'/>" +
                                 "</td>"+
                                 "<td>" +
-                                    "<input type='button' class='btn btn-info' value='添加' onclick='ccxx()'/>" +
-                                    "<input type='button' class='btn btn-warning' value='查看' onclick=''/>" +
+                                    "<input type='button' class='btn btn-info' value='添加' onclick='ccxx_add()'/>" +
+                                    "<input type='button' class='btn btn-warning' value='查看' onclick='ccxx_edit()'/>" +
                                 "</td>"+
                                 "<td>" +
-                                    "<input type='button' class='btn btn-info' value='添加' onclick='lxrxx()'/>" +
-                                    "<input type='button' class='btn btn-warning' value='查看' onclick=''/>" +
+                                    "<input type='button' class='btn btn-info' value='添加' onclick='lxrxx_add()'/>" +
+                                    "<input type='button' class='btn btn-warning' value='查看' onclick='lxrxx_edit()'/>" +
                                 "</td>"+   
                                 "<td>" +
-                                    "<input type='button' class='btn btn-info' value='添加' onclick='jzxx()'/>" +
-                                    "<input type='button' class='btn btn-warning' value='查看' onclick=''/>" +
+                                    "<input type='button' class='btn btn-info' value='添加' onclick='jzxx_add()'/>" +
+                                    "<input type='button' class='btn btn-warning' value='查看' onclick='jzxx_edit()'/>" +
                                 "</td>"+
                             "</tr>"+                           
                         "</table>"+
@@ -131,24 +155,24 @@ function khxxzlcj(){
                             "</tr>"+
                             "<tr>"+                             
                                 "<td>" +
-                                    "<input type='button' class='btn btn-info' value='添加' onclick='qyjbxx()'/>" +
-                                    "<input type='button' class='btn btn-warning' value='查看' onclick=''/>" +
+                                    "<input type='button' class='btn btn-info' value='添加' onclick='qyjbxx_add()'/>" +
+                                    "<input type='button' class='btn btn-warning' value='查看' onclick='qyjbxx_edit()'/>" +
                                 "</td>"+
                                 "<td>" +
-                                    "<input type='button' class='btn btn-info' value='添加' onclick='qyywxx()'/>" +
-                                    "<input type='button' class='btn btn-warning' value='查看' onclick=''/>" +
+                                    "<input type='button' class='btn btn-info' value='添加' onclick='qyywxx_add()'/>" +
+                                    "<input type='button' class='btn btn-warning' value='查看' onclick='qyywxx_edit()'/>" +
                                 "</td>"+
                                 "<td>" +
-                                    "<input type='button' class='btn btn-info' value='添加' onclick='qydpxx()'/>" +
-                                    "<input type='button' class='btn btn-warning' value='查看' onclick=''/>" +
+                                    "<input type='button' class='btn btn-info' value='添加' onclick='qydpxx_add()'/>" +
+                                    "<input type='button' class='btn btn-warning' value='查看' onclick='qydpxx_edit()'/>" +
                                 "</td>"+
                                 "<td>" +
-                                    "<input type='button' class='btn btn-info' value='添加' onclick='qykhxx()'/>" +
-                                    "<input type='button' class='btn btn-warning' value='查看' onclick=''/>" +
+                                    "<input type='button' class='btn btn-info' value='添加' onclick='qykhxx_add()'/>" +
+                                    "<input type='button' class='btn btn-warning' value='查看' onclick='qykhxx_edit()'/>" +
                                 "</td>"+
                                 "<td>" +
-                                    "<input type='button' class='btn btn-info' value='添加' onclick='qyqtxx()'/>" +
-                                    "<input type='button' class='btn btn-warning' value='查看' onclick=''/>" +
+                                    "<input type='button' class='btn btn-info' value='添加' onclick='qyqtxx_add()'/>" +
+                                    "<input type='button' class='btn btn-warning' value='查看' onclick='qyqtxx_edit()'/>" +
                                 "</td>"+
                             "</tr>"+
                         "</table>"+
@@ -158,81 +182,87 @@ function khxxzlcj(){
                             "</tr>"+
                             "<tr>"+                             
                                 "<td rowspan='2'>资产负债表</td>"+              
-                                "<td>资产状况<span class='label label-important'>未录入</span></td>"+                  
-                                "<td>负债情况<span class='label label-important'>未录入</span></td>"+             
-                                "<td>权益状况<span class='label label-important'>未录入</span></td>"+             
-                                "<td colspan='2'>其他信息<span class='label label-important'>未录入</span></td>"+ 
+                                "<td>资产状况<span class='label label-success'>已录入</span></td>"+                  
+                                "<td>负债情况<span class='label label-success'>已录入</span></td>"+             
+                                "<td>权益状况(缺)<span class='label label-important'>未录入</span></td>"+             
+                                "<td>其他信息(缺)<span class='label label-important'>未录入</span></td>"+            
+                                "<td></td>"+ 
                             "</tr>"+
                             "<tr>"+
 								"<td>" +
-                                    "<input type='button' class='btn btn-info' value='添加' onclick='zczk()'/>" +
-                                    "<input type='button' class='btn btn-warning' value='查看' onclick=''/>" +
+                                    "<input type='button' class='btn btn-info' value='添加' onclick='zczk_add()'/>" +
+                                    "<input type='button' class='btn btn-warning' value='查看' onclick='zczk_edit()'/>" +
                                 "</td>"+
 								"<td>" +
-                                    "<input type='button' class='btn btn-info' value='添加' onclick='fzqk()'/>" +
-                                    "<input type='button' class='btn btn-warning' value='查看' onclick=''/>" +
+                                    "<input type='button' class='btn btn-info' value='添加' onclick='fzqk_add()'/>" +
+                                    "<input type='button' class='btn btn-warning' value='查看' onclick='fzqk_edit()'/>" +
                                 "</td>"+								
 								"<td>" +
-                                    "<input type='button' class='btn btn-info' value='添加' onclick='qyzk()'/>" +
-                                    "<input type='button' class='btn btn-warning' value='查看' onclick=''/>" +
+                                    "<input type='button' class='btn btn-info' value='添加' onclick='qyzk_add()'/>" +
+                                    "<input type='button' class='btn btn-warning' value='查看' onclick='qyzk_edit()'/>" +
                                 "</td>"+															
-								"<td colspan='2'>" +
-                                    "<input type='button' class='btn btn-info' value='添加' onclick='zcfzqtxx()'/>" +
-                                    "<input type='button' class='btn btn-warning' value='查看' onclick=''/>" +
-                                "</td>"+
+								"<td>" +
+                                    "<input type='button' class='btn btn-info' value='添加' onclick='zcfzqtxx_add()'/>" +
+                                    "<input type='button' class='btn btn-warning' value='查看' onclick='zcfzqtxx_edit()'/>" +
+                                "</td>"+           
+                                "<td></td>"+ 
                             "</tr>"+
                             "<tr>"+   								
                                 "<td rowspan='2'>损益表</td>"+              
-                                "<td>利润表简表<span class='label label-important'>未录入</span></td>"+                  
-                                "<td>利润表标准表<span class='label label-important'>未录入</span></td>"+             
-                                "<td colspan='3'>其他信息<span class='label label-important'>未录入</span></td>"+      
+                                "<td>利润表简表(缺)<span class='label label-important'>未录入</span></td>"+                  
+                                "<td>利润表标准表(缺)<span class='label label-important'>未录入</span></td>"+             
+                                "<td>其他信息(缺)<span class='label label-important'>未录入</span></td>"+                 
+                                "<td></td>"+            
+                                "<td></td>"+ 
                             "</tr>"+
                             "<tr>"+
 								"<td>" +
-                                    "<input type='button' class='btn btn-info' value='添加' onclick='lrbjb()'/>" +
-                                    "<input type='button' class='btn btn-warning' value='查看' onclick=''/>" +
+                                    "<input type='button' class='btn btn-info' value='添加' onclick='lrbjb_add()'/>" +
+                                    "<input type='button' class='btn btn-warning' value='查看' onclick='lrbjb_edit()'/>" +
                                 "</td>"+
 								"<td>" +
-                                    "<input type='button' class='btn btn-info' value='添加' onclick='lrbbzb()'/>" +
-                                    "<input type='button' class='btn btn-warning' value='查看' onclick=''/>" +
+                                    "<input type='button' class='btn btn-info' value='添加' onclick='lrbbzb_add()'/>" +
+                                    "<input type='button' class='btn btn-warning' value='查看' onclick='lrbbzb_edit()'/>" +
                                 "</td>"+								
-								"<td colspan='3'>" +
-                                    "<input type='button' class='btn btn-info' value='添加' onclick='syqtxx()'/>" +
-                                    "<input type='button' class='btn btn-warning' value='查看' onclick=''/>" +
-                                "</td>"+
+								"<td>" +
+                                    "<input type='button' class='btn btn-info' value='添加' onclick='syqtxx_add()'/>" +
+                                    "<input type='button' class='btn btn-warning' value='查看' onclick='syqtxx_edit()'/>" +
+                                "</td>"+           
+                                "<td></td>"+            
+                                "<td></td>"+ 
                             "</tr>"+	
                             "</tr>"+          
-                                "<td>现金流表<span class='label label-important'>未录入</span></td>"+            
-                                "<td>点货单<span class='label label-important'>未录入</span></td>"+            
-                                "<td>固定资产清单<span class='label label-important'>未录入</span></td>"+        
+                                "<td>现金流表(缺)<span class='label label-important'>未录入</span></td>"+            
+                                "<td>点货单<span class='label label-success'>已录入</span></td>"+            
+                                "<td>固定资产清单<span class='label label-success'>已录入</span></td>"+        
                                 "<td>应收预付清单<span class='label label-important'>未录入</span></td>"+      
                                 "<td>应付预收清单<span class='label label-important'>未录入</span></td>"+      
                                 "<td>负债项目明细清单<span class='label label-important'>未录入</span></td>"+   
                             "</tr>"+
                             "<tr>"+  
                                 "<td>" +
-                                    "<input type='button' class='btn btn-info' value='添加' onclick='xjlb()'/>" +
-                                    "<input type='button' class='btn btn-warning' value='查看' onclick=''/>" +
+                                    "<input type='button' class='btn btn-info' value='添加' onclick='xjlb_add()'/>" +
+                                    "<input type='button' class='btn btn-warning' value='查看' onclick='xjlb_edit()'/>" +
                                 "</td>"+
                                 "<td>" +
-                                    "<input type='button' class='btn btn-info' value='添加' onclick='dhd()'/>" +
-                                    "<input type='button' class='btn btn-warning' value='查看' onclick=''/>" +
+                                    "<input type='button' class='btn btn-info' value='添加' onclick='dhd_add()'/>" +
+                                    "<input type='button' class='btn btn-warning' value='查看' onclick='dhd_edit()'/>" +
                                 "</td>"+
                                 "<td>" +
-                                    "<input type='button' class='btn btn-info' value='添加' onclick='gdzcqd()'/>" +
-                                    "<input type='button' class='btn btn-warning' value='查看' onclick=''/>" +
+                                    "<input type='button' class='btn btn-info' value='添加' onclick='gdzcqd_add()'/>" +
+                                    "<input type='button' class='btn btn-warning' value='查看' onclick='gdzcqd_edit()'/>" +
                                 "</td>"+
                                 "<td>" +
-                                    "<input type='button' class='btn btn-info' value='添加' onclick='ysyfqd()'/>" +
-                                    "<input type='button' class='btn btn-warning' value='查看' onclick=''/>" +
+                                    "<input type='button' class='btn btn-info' value='添加' onclick='ysyfqd_add()'/>" +
+                                    "<input type='button' class='btn btn-warning' value='查看' onclick='ysyfqd_edit()'/>" +
                                 "</td>"+
                                 "<td>" +
-                                    "<input type='button' class='btn btn-info' value='添加' onclick='yfysqd()'/>" +
-                                    "<input type='button' class='btn btn-warning' value='查看' onclick=''/>" +
+                                    "<input type='button' class='btn btn-info' value='添加' onclick='yfysqd_add()'/>" +
+                                    "<input type='button' class='btn btn-warning' value='查看' onclick='yfysqd_edit()'/>" +
                                 "</td>"+
                                 "<td>" +
-                                    "<input type='button' class='btn btn-info' value='添加' onclick='fzxmmxqd()'/>" +
-                                    "<input type='button' class='btn btn-warning' value='查看' onclick=''/>" +
+                                    "<input type='button' class='btn btn-info' value='添加' onclick='fzxmmxqd_add()'/>" +
+                                    "<input type='button' class='btn btn-warning' value='查看' onclick='fzxmmxqd_edit()'/>" +
                                 "</td>"+
                             "</tr>"+
                         "</table>"+
@@ -244,7 +274,10 @@ function khxxzlcj(){
 //客户影像资料采集
 function khyxzlcj(){
     $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>影像资料采集<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
-                    "<div class='content' style='margin-top:100px;'>" +
+                    "<div class='content' style='margin-top:100px;'>" +  
+                    //"<div class='box box5' onclick='fcz()'><img src='images/fcz.png'/><span>房产证</span></div>"+
+                   // "<div class='box box4' onclick='jhz()'><img src='images/jhz.png'/><span>结婚证</span></div>"+
+                    //"<div class='box box1' onclick='yhls()'><img src='images/yhls.png'/><span>银行流水</span></div>"+                      
                         "<p><input type='button' class='tab' value='房产证' onclick='fcz()'/></p>"+
                         "<p><input type='button' class='tab' value='结婚证' onclick='jhz()'/></p>"+
                         "<p><input type='button' class='tab' value='征信报告' onclick='zxbg()'/></p>"+
@@ -266,8 +299,8 @@ function fcz(){
                             "</tr>"+
                             "<tr>"+    
                                 "<td>1</td>"+
-                                "<td><input type='file'/></td>"+
-                                "<td><button class='btn btn-success btn-small'><img src='images/ps.png'/></button></td>"+
+                                "<td><input type='text' id='fcz_sheet1' class='readonly' readonly='readonly'/><input type='file' onclick='getMedia(\"fcz_sheet1\",\"img\");'/></td>"+
+                                "<td><button class='btn btn-success btn-small' onclick='capture(\"fcz_sheet1\",\"img\");'><img src='images/ps.png'/></button></td>"+
                             "</tr>"+
                         "</table>"+
                         "<p class='Left'>" +
@@ -294,8 +327,8 @@ function jhz(){
                             "</tr>"+
                             "<tr>"+    
                                 "<td>1</td>"+
-                                "<td><input type='file'/></td>"+
-                                "<td><button class='btn btn-success btn-small'><img src='images/ps.png'/></button></td>"+
+                                "<td><input type='text' id='jhz_sheet1' class='readonly' readonly='readonly'/><input type='file' onclick='getMedia(\"jhz_sheet1\",\"img\");'/></td>"+
+                                "<td><button class='btn btn-success btn-small' onclick='capture(\"jhz_sheet1\",\"img\");'><img src='images/ps.png'/></button></td>"+
                             "</tr>"+
                         "</table>"+
                         "<p class='Left'>" +
@@ -322,8 +355,8 @@ function zxbg(){
                             "</tr>"+
                             "<tr>"+    
                                 "<td>1</td>"+
-                                "<td><input type='file'/></td>"+
-                                "<td><button class='btn btn-success btn-small'><img src='images/ps.png'/></button></td>"+
+                                "<td><input type='text' id='zxbg_sheet1' class='readonly' readonly='readonly'/><input type='file' onclick='getMedia(\"zxbg_sheet1\",\"img\");'/></td>"+
+                                "<td><button class='btn btn-success btn-small' onclick='capture(\"zxbg_sheet1\",\"img\");'><img src='images/ps.png'/></button></td>"+
                             "</tr>"+
                         "</table>"+
                         "<p class='Left'>" +
@@ -350,8 +383,8 @@ function yhls(){
                             "</tr>"+
                             "<tr>"+    
                                 "<td>1</td>"+
-                                "<td><input type='file'/></td>"+
-                                "<td><button class='btn btn-success btn-small'><img src='images/ps.png'/></button></td>"+
+                                "<td><input type='text' id='yhls_sheet1' class='readonly' readonly='readonly'/><input type='file' onclick='getMedia(\"yhls_sheet1\",\"img\");'/></td>"+
+                                "<td><button class='btn btn-success btn-small' onclick='capture(\"yhls_sheet1\",\"img\");'><img src='images/ps.png'/></button></td>"+
                             "</tr>"+
                         "</table>"+
                         "<p class='Left'>" +

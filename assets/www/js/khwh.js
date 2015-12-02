@@ -15,7 +15,7 @@ function khzlcx(){
 }
 //客户维护-客户资料查询-查询
 function khcx(){
-    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>张三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>郝俊芝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>" +
                         "<table class='cpTable'>"+
                             "<tr>"+                             
@@ -55,7 +55,7 @@ function khwhjh(){
                             "</tr>"+
                             "<tr>"+    
                                 "<td>1</td>"+
-                                "<td>张三</td>"+
+                                "<td>郝俊芝</td>"+
                                 "<td></td>"+
                                 "<td></td>"+
                                 "<td>100000</td>"+
@@ -87,7 +87,7 @@ function khwhrz(){
                             "</tr>"+
                             "<tr>"+    
                                 "<td>1</td>"+
-                                "<td>张三</td>"+
+                                "<td>郝俊芝</td>"+
                                 "<td></td>"+
                                 "<td></td>"+
                                 "<td>2015-12-12</td>"+
@@ -119,7 +119,7 @@ function khcsrz(){
                             "</tr>"+
                             "<tr>"+    
                                 "<td>1</td>"+
-                                "<td>张三</td>"+
+                                "<td>郝俊芝</td>"+
                                 "<td></td>"+
                                 "<td>电话</td>"+
                                 "<td>2015-12-12</td>"+
@@ -154,7 +154,7 @@ function bgcsjh(){
                             "</tr>"+
                             "<tr>"+    
                                 "<td>1</td>"+
-                                "<td>张三</td>"+
+                                "<td>郝俊芝</td>"+
                                 "<td></td>"+
                                 "<td></td>"+
                                 "<td>100000</td>"+
