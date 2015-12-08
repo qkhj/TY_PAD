@@ -8,6 +8,7 @@ input[type=date],input[type=time]{width:150px;padding:5px;}
 input[type=file]{width:90px;}
 input.readonly{width:300px;background:#ddd}
 input[type=text].addinput,input[type=date].addinput{width:80%;margin:0;padding:5px;}
+input[readonly]{background:#ddd}
 button.btn{margin:15px;font-size:20px;line-height:35px;width:150px;}
 button.btn img{vertical-align:text-bottom;width:25px;height:25px;}
 button.btn-small{width:60px;}
@@ -98,3 +99,6 @@ input[type=button]{margin:0 10px;}
 
 #message1 td,#message2 td,#message3 td{text-align:center;}
 #message1 .label,#message2 .label,#message3 .label{font-size:14px;}
+
+button.my-btn {padding:0 2px 3px 0;width:40px;margin:0 5px 5px 5px;}
+.my-btn img{width:25px;height:25px;}
