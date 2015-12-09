@@ -112,7 +112,7 @@ function khxxzlcj(){
                                 "<td>房产信息<span class='label label-success'>已录入</span></td>"+
                                 "<td>家庭信息<span class='label label-success'>已录入</span></td>"+ 
                                 "<td>车产信息<span class='label label-important'>未录入</span></td>"+ 
-                                "<td>联系人信息(缺)<span class='label label-important'>未录入</span></td>"+ 
+                                "<td>联系人信息<span class='label label-important'>未录入</span></td>"+ 
                                 "<td>居住信息<span class='label label-success'>已录入</span></td>"+
                             "</tr>"+
                             "<tr>"+       
