@@ -1,7 +1,7 @@
 //我的计划
 function mywdjh(){
     $("#wdjh").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>我的计划<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
-                    "<div class='content' style='padding-left:1em;'>" +
+                    "<div class='content' style='padding-left:1em;position:absolute;right:0;left:0;height:680px;;background:#fff url(images/logo.jpg) no-repeat;background-position:bottom center;'>" +
                         "<div class='box box10' onclick='mykhwhjh()'><img src='images/khwhjh.png'/><span>客户维护计划</span></div>"+
                         "<div class='box box11' onclick='khcsjh()'><img src='images/khcsjh.png'/><span>客户催收计划</span></div>"+
                         "<div class='box box12' onclick='pxjh()'><img src='images/pxjh.png'/><span>培训计划</span></div>"+

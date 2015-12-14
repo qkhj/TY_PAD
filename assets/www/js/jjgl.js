@@ -274,16 +274,19 @@ function khxxzlcj(){
 //客户影像资料采集
 function khyxzlcj(){
     $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>影像资料采集<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
-                    "<div class='content' style='padding-left:1em;'>" +  
-                        "<div class='box box1' onclick='fcz()'><img src='images/fcz.png'/><span>房产证</span></div>"+
-                        "<div class='box box9' onclick='jhz()'><img src='images/jhz.png'/><span>结婚证</span></div>"+
-                        "<div class='box box3' onclick='zxbg()'><img src='images/zxbg.png'/><span>征信报告</span></div>"+
-                        "<div class='box box7' onclick='yhls()'><img src='images/yhls.png'/><span>银行流水</span></div>"+  
+                    "<div class='content' style='padding-left:1em;text-align:center;'>" +  
+                        "<div class='box box13' onclick='fcz()'><img src='images/fcz.png'/><span>房产证</span></div>"+
+                        "<div class='box box14' onclick='jhz()'><img src='images/jhz.png'/><span>结婚证</span></div>"+
+                        "<div class='box box15' onclick='zxbg()'><img src='images/zxbg.png'/><span>征信报告</span></div>"+
+                        "<div class='box box16' onclick='yhls()'><img src='images/yhls.png'/><span>银行流水</span></div>"+  
                        // "<p><input type='button' class='tab' value='房产证' onclick='fcz()'/></p>"+
                        // "<p><input type='button' class='tab' value='结婚证' onclick='jhz()'/></p>"+
                        // "<p><input type='button' class='tab' value='征信报告' onclick='zxbg()'/></p>"+
                         //"<p><input type='button' class='tab' value='银行流水' onclick='yhls()'/></p>" +
-                        //"<p><input type='button' class='btn btn-large' value='返回' onclick='newUser1()'/></p>" +
+                        //"<div style='width:100%;float:left;'><p><input type='button' class='btn btn-large' value='返回' onclick='newUser1()'/></p></div>" +
+                    "</div>"+
+                    "<div class='buttons'>" +
+                        "<input type='button' class='btn btn-large' value='返回' onclick='newUser1()'/>" +
                     "</div>");
     $(".right").hide();
     $("#khgl").show();

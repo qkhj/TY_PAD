@@ -15,7 +15,7 @@
              <form class='login_form' action='index.html' method='post'>
                  <img src='images/login.png'/>              
                  <div class='login'>
-                     <h1>PAD</h1>
+                     <h1>蜂巢WE贷</h1>
                      <input type='text' placeholder='用户名' style="background-image:url('images/login1.png');" onchange="alert($(this).val())" />
                      <input type='password' placeholder='密码' style="background-image:url('images/login2.png');"/>
                      <!--错误信息提示--> 
@@ -32,13 +32,13 @@
 		<ul class="nav">
 			<li onclick="changeNav(this);user()"><img src="images/user/01.png" class="user"/></li>
 			<li id="index" onclick="changeNav(this);mywdsy()"><img src="images/wdsy.png"/><span>我的首页</span></li>
-			<li id="product" onclick="changeNav(this);mycpgl()"><img src="images/cpgl.png"/><span>产品查询</span></li>
+			<!-- <li id="product" onclick="changeNav(this);mycpgl()"><img src="images/cpgl.png"/><span>产品查询</span></li> -->
 			<li id="customer" onclick="changeNav(this);mykhgl()"><img src="images/khgl.png"/><span>客户管理</span></li>
 			<li id="customer" onclick="changeNav(this);myjjgl()"><img src="images/jjgl.png"/><span>进件管理</span></li>
 			<li onclick="changeNav(this);mywdjh()"><img src="images/wdjh.png"/><span>我的计划</span></li>
 		</ul>
 	</div>
-	<div id="wdsy" class="right" style="display:none;bottom:0;">
+	<div id="wdsy" class="right" style="display:none;">
 		<div class='title'><img src='images/show.png' onclick='showNav()'/>我的首页<img class='Right' src='images/dc.png' onclick='dc()'/></div> 
         <div class='content' style='margin-bottom:0;'>
         	<table class='ListTb'>
