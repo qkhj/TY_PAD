@@ -4,11 +4,20 @@ function changeNav(obj){
     $(obj).css("background","#2a3950");
     $(".left").animate({left:"-7.1em"},"500");
     $(".right").animate({left:"0"},"500");
+    setTimeout("$('.left').hide()",500);
 }
 function showNav(){
-    $(".left").show();
-    $(".left").animate({left:"0"},"500");
-    $(".right").animate({left:"7.1em"},"500");
+    if($(".left").css("display")=="none"){
+        $(".left").show();
+        $(".left").animate({left:"0"},"500");
+        $(".right").animate({left:"7.1em"},"500");        
+    }
+    else{
+        $(".left").animate({left:"-7.1em"},"500");
+        $(".right").animate({left:"0"},"500"); 
+        setTimeout("$('.left').hide()",500);
+    }
+        
 }
 //选择行
 function check(obj){
@@ -36,6 +45,15 @@ function search(obj){
 }
 //表格添加行
 function addTd(table){ 
+    if(table=="lxrxx"){//联系人信息
+        var num= $('#lxrxx tr').length;
+        $("#"+table).append("<tr>"+    
+                                "<td>"+num+"</td>"+
+                                "<td><input type='text' value=''/></td>"+
+                                "<td><input type='text' value=''/></td>"+
+                                "<td><input type='text' value=''/></td>"+
+                            "</tr>");      
+    }
     if(table=="csqy"){//初始权益
         $("#"+table).append("<tr>"+    
                                 "<td><input type='text' value=''/></td>" +

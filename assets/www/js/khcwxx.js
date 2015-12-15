@@ -1,5 +1,6 @@
 //现金流表
-function xjlb_add(){
+function xjlb_add(){	
+    window.scrollTo(0,0);//滚动条回到顶端
     $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>郝俊芝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>"+
                         "<table class='cpTable'>"+
