@@ -1,8 +1,14 @@
+function  checkRadio(obj){    
+    $(obj).parent().find('.radio').attr("class","radio");
+    $(obj).parent().find('input[type=radio]').removeAttr('checked');
+    $(obj).attr("class","radio radio_checked");
+    $(obj).find('input[type=radio]').attr('checked',"checked");
+}
 //左侧导航
 function changeNav(obj){
     $(".left .nav li").css("background","#364860");
     $(obj).css("background","#2a3950");
-    $(".left").animate({left:"-7.1em"},"500");
+    $(".left").animate({left:"-13.1em"},"500");
     $(".right").animate({left:"0"},"500");
     setTimeout("$('.left').hide()",500);
 }
@@ -10,10 +16,10 @@ function showNav(){
     if($(".left").css("display")=="none"){
         $(".left").show();
         $(".left").animate({left:"0"},"500");
-        $(".right").animate({left:"7.1em"},"500");        
+        $(".right").animate({left:"13.1em"},"500");        
     }
     else{
-        $(".left").animate({left:"-7.1em"},"500");
+        $(".left").animate({left:"-13.1em"},"500");
         $(".right").animate({left:"0"},"500"); 
         setTimeout("$('.left').hide()",500);
     }
@@ -22,8 +28,13 @@ function showNav(){
 //选择行
 function check(obj){
     $("input[type=radio]").removeAttr("checked");
+    $(".radio").attr("class","radio");
+    $(obj).parent().find("tr").css("background","#fff");
     $(obj).find("input[type=radio]").attr('checked','checked');
+    $(obj).find(".radio").attr("class","radio radio_checked");
+    $(obj).css("background","#dceafc");
 }
+
 //搜索
 function search(obj){
     var value=$(obj).val();
@@ -196,7 +207,7 @@ function addTd(table){
         var num= $('#fcz tr').length;
         $("#"+table).append("<tr>"+    
                                 "<td>"+num+"</td>"+
-                                "<td><input type='text' id='fcz_sheet"+num+"' class='readonly' readonly='readonly'/><input type='file' onclick='getMedia(\"fcz_sheet"+num+"\",\"img\");'/></td>"+
+                                "<td><input type='text' id='fcz_sheet"+num+"' class='readonly' readonly='readonly'/><input type='button' class='btn' value='选择文件' onclick='getMedia(\"fcz_sheet"+num+"\",\"img\");'/></td>"+
                                 "<td><button class='btn btn-success btn-small' onclick='capture(\"fcz_sheet"+num+"\",\"img\");'><img src='images/ps.png'/></button></td>"+
                             "</tr>");      
     }
@@ -204,7 +215,7 @@ function addTd(table){
         var num= $('#jhz tr').length;
         $("#"+table).append("<tr>"+    
                                 "<td>"+num+"</td>"+
-                                "<td><input type='text' id='jhz_sheet"+num+"' class='readonly' readonly='readonly'/><input type='file' onclick='getMedia(\"jhz_sheet"+num+"\",\"img\");'/></td>"+
+                                "<td><input type='text' id='jhz_sheet"+num+"' class='readonly' readonly='readonly'/><input type='button' class='btn' value='选择文件' onclick='getMedia(\"jhz_sheet"+num+"\",\"img\");'/></td>"+
                                 "<td><button class='btn btn-success btn-small' onclick='capture(\"jhz_sheet"+num+"\",\"img\");'><img src='images/ps.png'/></button></td>"+
                             "</tr>");      
     }
@@ -212,7 +223,7 @@ function addTd(table){
         var num= $('#zxbg tr').length;
         $("#"+table).append("<tr>"+    
                                 "<td>"+num+"</td>"+
-                                "<td><input type='text' id='zxbg_sheet"+num+"' class='readonly' readonly='readonly'/><input type='file' onclick='getMedia(\"zxbg_sheet"+num+"\",\"img\");'/></td>"+
+                                "<td><input type='text' id='zxbg_sheet"+num+"' class='readonly' readonly='readonly'/><input type='button' class='btn' value='选择文件' onclick='getMedia(\"zxbg_sheet"+num+"\",\"img\");'/></td>"+
                                 "<td><button class='btn btn-success btn-small' onclick='capture(\"zxbg_sheet"+num+"\",\"img\");'><img src='images/ps.png'/></button></td>"+
                             "</tr>");      
     }
@@ -220,7 +231,7 @@ function addTd(table){
         var num= $('#yhls tr').length;
         $("#"+table).append("<tr>"+    
                                 "<td>"+num+"</td>"+
-                                "<td><input type='text' id='yhls_sheet"+num+"' class='readonly' readonly='readonly'/><input type='file' onclick='getMedia(\"yhls_sheet"+num+"\",\"img\");'/></td>"+
+                                "<td><input type='text' id='yhls_sheet"+num+"' class='readonly' readonly='readonly'/><input type='button' class='btn' value='选择文件' onclick='getMedia(\"yhls_sheet"+num+"\",\"img\");'/></td>"+
                                 "<td><button class='btn btn-success btn-small' onclick='capture(\"yhls_sheet"+num+"\",\"img\");'><img src='images/ps.png'/></button></td>"+
                             "</tr>");      
     }

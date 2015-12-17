@@ -7,7 +7,7 @@ function khzlcx(){
                         "<p>证件号码:<input type='text'/></p>"+
                         "<p>" +
                             "<input type='button' class='btn btn-large btn-primary' value='查询' onclick='khcx()'/>"+                       
-                            "<input type='button' class='btn btn-large' value='返回' onclick='editUser()'/>" +
+                            "<input type='button' class='btn btn-large btn-primary' value='返回' onclick='editUser()'/>" +
                         "</p>" +
                     "</div>");
     $(".right").hide();
@@ -29,7 +29,7 @@ function khcx(){
                         "</table>"+
                         "<p>" +
                             "<input type='button' class='btn btn-large btn-primary' value='客户资料查询' onclick=''/>"+                       
-                            "<input type='button' class='btn btn-large' value='返回' onclick='khzlcx()'/>" +
+                            "<input type='button' class='btn btn-large btn-primary' value='返回' onclick='khzlcx()'/>" +
                         "</p>" +
                     "</div>");
     $(".right").hide();
@@ -130,7 +130,7 @@ function khcsrz(){
                             "</tr>"+
                         "</table>"+
                         "<textarea placeholder='客户催收实施描述' style='width:98%;height:15em;margin:0;border-width:1px 0;border-radius:none;'></textarea>"+
-                        "<p><input type='button' class='btn btn-large' value='返回' onclick='editUser()'/></p>"+
+                        "<p><input type='button' class='btn btn-large btn-primary' value='返回' onclick='editUser()'/></p>"+
                     "</div>");
     $(".right").hide();
     $("#khgl").show();
