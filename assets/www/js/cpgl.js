@@ -125,7 +125,7 @@ function mycpgl(){
                         "</ul>"+
                     "</div>"+
                     "<div class='buttons'>" +
-                        "<input type='button' class='btn btn-large' value='返回' onclick='mywdsy()'/>" +
+                        "<input type='button' class='btn btn-large btn-primary' value='返回' onclick='mywdsy()'/>" +
                         "<input type='text' style='float:right;margin:20px 40px;' placeholder='搜索' onchange='search(this)'/>" +
                     "</div>");
     $(".right").hide();
@@ -193,7 +193,7 @@ function mycpxx1(){
                                 "<td>产品还款规则</td>"+          
                                 "<td>按月还款</td>"+
                             "</tr>"+
-                        "</table>"+
+                        "</table>"+*/
                         "<table class='cpTable llTable1'>"+
                             "<tr>"+                             
                                 "<th colspan='5'>经营性利率</th>"+  
@@ -502,10 +502,10 @@ function mycpxx1(){
                                 "<th>10000</th>"+               
                                 "<th></th>"+
                             "</tr>"+
-                        "</table>"+*/
+                        "</table>"+
                     "</div>"+
                     "<div class='buttons'>" +
-                        "<input type='button' class='btn btn-large' value='返回' onclick='mycpgl()'/>" +
+                        "<input type='button' class='btn btn-large btn-primary' value='返回' onclick='mycpgl()'/>" +
                     "</div>");
     $(".right").hide();
     $("#cpgl").show();
@@ -573,7 +573,7 @@ function mycpxx2(){
                         "</table>"+*/
                     "</div>"+
                     "<div class='buttons'>" +
-                        "<input type='button' class='btn btn-large' value='返回' onclick='mycpgl()'/>" +
+                        "<input type='button' class='btn btn-large btn-primary' value='返回' onclick='mycpgl()'/>" +
                     "</div>");
     $(".right").hide();
     $("#cpgl").show();
@@ -639,7 +639,7 @@ function mycpxx3(){
                         "</table>"+*/
                     "</div>"+
                     "<div class='buttons'>" +
-                        "<input type='button' class='btn btn-large' value='返回' onclick='mycpgl()'/>" +
+                        "<input type='button' class='btn btn-large btn-primary' value='返回' onclick='mycpgl()'/>" +
                     "</div>");
     $(".right").hide();
     $("#cpgl").show();
@@ -705,7 +705,7 @@ function mycpxx4(){
                         "</table>"+*/
                     "</div>"+
                     "<div class='buttons'>" +
-                        "<input type='button' class='btn btn-large' value='返回' onclick='mycpgl()'/>" +
+                        "<input type='button' class='btn btn-large btn-primary' value='返回' onclick='mycpgl()'/>" +
                     "</div>");
     $(".right").hide();
     $("#cpgl").show();
@@ -872,7 +872,7 @@ function mycpxx5(){
                         "</table>"+
                     "</div>"+
                     "<div class='buttons'>" +
-                        "<input type='button' class='btn btn-large' value='返回' onclick='mycpgl()'/>" +
+                        "<input type='button' class='btn btn-large btn-primary' value='返回' onclick='mycpgl()'/>" +
                     "</div>");
     $(".right").hide();
     $("#cpgl").show();

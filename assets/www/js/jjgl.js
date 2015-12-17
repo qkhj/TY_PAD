@@ -2,7 +2,7 @@
 function myjjgl(){
     $("#jjgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>进件管理-新建进件<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
 					"<div class='content'>" +
-						"<table class='cpTable' style='text-align:center;'>"+
+						"<table class='cpTable jjTable' style='text-align:center;'>"+
                             "<tr>"+                         
                                 "<th></th>"+                 
                                 "<th>产品名称</th>"+  
@@ -12,7 +12,7 @@ function myjjgl(){
                                 "<th>产品利率</th>"+ 
                             "</tr>"+
                             "<tr onclick='check(this)'>"+    
-                                "<td><input type='radio'/></td>"+
+                                "<td><span class='radio'><input type='radio'/></span></td>"+
                                 "<td>集群通</td>"+
                                 "<td>经营贷款</td>"+
                                 "<td>5000元—500万元</td>"+
@@ -20,7 +20,7 @@ function myjjgl(){
                                 "<td>8%</td>"+
                             "</tr>"+
                             "<tr onclick='check(this)'>"+    
-                                "<td><input type='radio'/></td>"+
+                                "<td><span class='radio'><input type='radio'/></span></td>"+
                                 "<td>繁星通</td>"+
                                 "<td>经营贷款</td>"+
                                 "<td>5000元—500万元</td>"+
@@ -28,7 +28,7 @@ function myjjgl(){
                                 "<td>8%</td>"+
                             "</tr>"+
                             "<tr onclick='check(this)'>"+    
-                                "<td><input type='radio'/></td>"+
+                                "<td><span class='radio'><input type='radio'/></span></td>"+
                                 "<td>信薪通</td>"+
                                 "<td>消费贷款</td>"+
                                 "<td>5000元—100万元</td>"+
@@ -36,7 +36,7 @@ function myjjgl(){
                                 "<td>8%</td>"+
                             "</tr>"+
                             "<tr onclick='check(this)'>"+    
-                                "<td><input type='radio'/></td>"+
+                                "<td><span class='radio'><input type='radio'/></span></td>"+
                                 "<td>个税通</td>"+
                                 "<td>消费贷款</td>"+
                                 "<td>5000元—100万元</td>"+
@@ -44,7 +44,7 @@ function myjjgl(){
                                 "<td>8%</td>"+
                             "</tr>"+
                             "<tr onclick='check(this)'>"+    
-                                "<td><input type='radio'/></td>"+
+                                "<td><span class='radio'><input type='radio'/></span></td>"+
                                 "<td>税信通</td>"+
                                 "<td>经营性贷款</td>"+
                                 "<td>5000元—100万元</td>"+
@@ -60,21 +60,41 @@ function myjjgl(){
 function myjjgl2(){
     $("#jjgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>进件管理-新建进件<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
 					"<div class='content'>" +
-						"<table class='cpTable' style='text-align:center;'>"+
+						"<table class='cpTable jjTable' style='text-align:center;'>"+
                             "<tr>"+                         
                                 "<th></th>"+                 
                                 "<th>客户名称</th>"+  
                                 "<th>证件号码</th>"+
                             "</tr>"+
                             "<tr onclick='check(this)'>"+    
-                                "<td><input type='radio'/></td>"+
-                                "<td>郝俊芝</td>"+
+                                "<td><span class='radio'><input type='radio'/></span></td>"+
+                                "<td>客户1</td>"+
                                 "<td>320404197702656264</td>"+
                             "</tr>"+
                             "<tr onclick='check(this)'>"+    
-                                "<td><input type='radio'/></td>"+
-                                "<td>阎育强</td>"+
+                                "<td><span class='radio'><input type='radio'/></span></td>"+
+                                "<td>客户2</td>"+
                                 "<td>320404198002356125</td>"+
+                            "</tr>"+
+                            "<tr onclick='check(this)'>"+    
+                                "<td><span class='radio'><input type='radio'/></span></td>"+
+                                "<td>客户3</td>"+
+                                "<td>320156459856202156</td>"+
+                            "</tr>"+
+                            "<tr onclick='check(this)'>"+    
+                                "<td><span class='radio'><input type='radio'/></span></td>"+
+                                "<td>客户4</td>"+
+                                "<td>320404159862023651</td>"+
+                            "</tr>"+
+                            "<tr onclick='check(this)'>"+    
+                                "<td><span class='radio'><input type='radio'/></span></td>"+
+                                "<td>客户5</td>"+
+                                "<td>302505659852147563</td>"+
+                            "</tr>"+
+                            "<tr onclick='check(this)'>"+    
+                                "<td><span class='radio'><input type='radio'/></span></td>"+
+                                "<td>客户6</td>"+
+                                "<td>320404198056231456</td>"+
                             "</tr>"+
                         "</table>"+
                         "<p><input type='button' class='btn btn-primary btn-large' value='确定' onclick='newUser1()'/></p>"+
@@ -266,7 +286,7 @@ function khxxzlcj(){
                                 "</td>"+
                             "</tr>"+
                         "</table>"+
-                        "<p><input type='button' class='btn btn-large' value='返回' onclick='newUser1()'/></p>" +
+                        "<p><input type='button' class='btn btn-large btn-primary' value='返回' onclick='newUser1()'/></p>" +
                     "</div>");
     $(".right").hide();
     $("#khgl").show();
@@ -274,7 +294,7 @@ function khxxzlcj(){
 //客户影像资料采集
 function khyxzlcj(){
     $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>影像资料采集<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
-                    "<div class='content' style='padding-left:1em;text-align:center;'>" +  
+                    "<div class='content' style='text-align:center;'>" +  
                         "<div class='box box13' onclick='fcz()'><img src='images/fcz.png'/><span>房产证</span></div>"+
                         "<div class='box box14' onclick='jhz()'><img src='images/jhz.png'/><span>结婚证</span></div>"+
                         "<div class='box box15' onclick='zxbg()'><img src='images/zxbg.png'/><span>征信报告</span></div>"+
@@ -286,7 +306,7 @@ function khyxzlcj(){
                         //"<div style='width:100%;float:left;'><p><input type='button' class='btn btn-large' value='返回' onclick='newUser1()'/></p></div>" +
                     "</div>"+
                     "<div class='buttons'>" +
-                        "<input type='button' class='btn btn-large' value='返回' onclick='newUser1()'/>" +
+                        "<input type='button' class='btn btn-large btn-primary' value='返回' onclick='newUser1()'/>" +
                     "</div>");
     $(".right").hide();
     $("#khgl").show();
@@ -303,7 +323,7 @@ function fcz(){
                             "</tr>"+
                             "<tr>"+    
                                 "<td>1</td>"+
-                                "<td><input type='text' id='fcz_sheet1' class='readonly' readonly='readonly'/><input type='file' onclick='getMedia(\"fcz_sheet1\",\"img\");'/></td>"+
+                                "<td><input type='text' id='fcz_sheet1' class='readonly' readonly='readonly'/><input type='button' class='btn' onclick='getMedia(\"fcz_sheet1\",\"img\");' value='选择文件'/></td>"+
                                 "<td><button class='btn btn-success btn-small' onclick='capture(\"fcz_sheet1\",\"img\");'><img src='images/ps.png'/></button></td>"+
                             "</tr>"+
                         "</table>"+
@@ -313,7 +333,7 @@ function fcz(){
                         "</p>"+
                         "<p>" +
                             "<input type='button' class='btn btn-large btn-primary' value='确定'/>" +
-                            "<input type='button' class='btn btn-large' value='返回' onclick='khyxzlcj()'/>" +
+                            "<input type='button' class='btn btn-large btn-primary' value='返回' onclick='khyxzlcj()'/>" +
                         "</p>" +
                     "</div>");
     $(".right").hide();
@@ -331,7 +351,7 @@ function jhz(){
                             "</tr>"+
                             "<tr>"+    
                                 "<td>1</td>"+
-                                "<td><input type='text' id='jhz_sheet1' class='readonly' readonly='readonly'/><input type='file' onclick='getMedia(\"jhz_sheet1\",\"img\");'/></td>"+
+                                "<td><input type='text' id='jhz_sheet1' class='readonly' readonly='readonly'/><input type='button' class='btn' onclick='getMedia(\"jhz_sheet1\",\"img\");' value='选择文件'/></td>"+
                                 "<td><button class='btn btn-success btn-small' onclick='capture(\"jhz_sheet1\",\"img\");'><img src='images/ps.png'/></button></td>"+
                             "</tr>"+
                         "</table>"+
@@ -341,7 +361,7 @@ function jhz(){
                         "</p>"+
                         "<p>" +
                             "<input type='button' class='btn btn-large btn-primary' value='确定'/>" +
-                            "<input type='button' class='btn btn-large' value='返回' onclick='khyxzlcj()'/>" +
+                            "<input type='button' class='btn btn-large btn-primary' value='返回' onclick='khyxzlcj()'/>" +
                         "</p>" +
                     "</div>");
     $(".right").hide();
@@ -359,7 +379,7 @@ function zxbg(){
                             "</tr>"+
                             "<tr>"+    
                                 "<td>1</td>"+
-                                "<td><input type='text' id='zxbg_sheet1' class='readonly' readonly='readonly'/><input type='file' onclick='getMedia(\"zxbg_sheet1\",\"img\");'/></td>"+
+                                "<td><input type='text' id='zxbg_sheet1' class='readonly' readonly='readonly'/><input type='button' class='btn' onclick='getMedia(\"zxbg_sheet1\",\"img\");' value='选择文件'/></td>"+
                                 "<td><button class='btn btn-success btn-small' onclick='capture(\"zxbg_sheet1\",\"img\");'><img src='images/ps.png'/></button></td>"+
                             "</tr>"+
                         "</table>"+
@@ -369,7 +389,7 @@ function zxbg(){
                         "</p>"+
                         "<p>" +
                             "<input type='button' class='btn btn-large btn-primary' value='确定'/>" +
-                            "<input type='button' class='btn btn-large' value='返回' onclick='khyxzlcj()'/>" +
+                            "<input type='button' class='btn btn-large btn-primary' value='返回' onclick='khyxzlcj()'/>" +
                         "</p>" +
                     "</div>");
     $(".right").hide();
@@ -387,7 +407,7 @@ function yhls(){
                             "</tr>"+
                             "<tr>"+    
                                 "<td>1</td>"+
-                                "<td><input type='text' id='yhls_sheet1' class='readonly' readonly='readonly'/><input type='file' onclick='getMedia(\"yhls_sheet1\",\"img\");'/></td>"+
+                                "<td><input type='text' id='yhls_sheet1' class='readonly' readonly='readonly'/><input type='button' class='btn' onclick='getMedia(\"yhls_sheet1\",\"img\");' value='选择文件'/></td>"+
                                 "<td><button class='btn btn-success btn-small' onclick='capture(\"yhls_sheet1\",\"img\");'><img src='images/ps.png'/></button></td>"+
                             "</tr>"+
                         "</table>"+
@@ -397,7 +417,7 @@ function yhls(){
                         "</p>"+
                         "<p>" +
                             "<input type='button' class='btn btn-large btn-primary' value='确定'/>" +
-                            "<input type='button' class='btn btn-large' value='返回' onclick='khyxzlcj()'/>" +
+                            "<input type='button' class='btn btn-large btn-primary' value='返回' onclick='khyxzlcj()'/>" +
                         "</p>" +
                     "</div>");
     $(".right").hide();
