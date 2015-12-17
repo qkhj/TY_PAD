@@ -1,7 +1,8 @@
 //我的首页
 function mywdsy(){
     $("#wdsy").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>我的首页<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
-                    "<div class='content' style='padding-left:1em;'>" +
+                    "<div class='content' style='padding-left:1em;position:absolute;height:680px;;background:#fff url(images/logo.jpg) no-repeat;background-position:bottom center;'>" +
+                        "<div class='box box2' onclick='mycpgl()'><img src='images/clkh.png'/><span>产品查询</span></div>"+
                         "<div class='box box5' onclick='khjjxx()'><img src='images/khjjxx.png'/><span>客户进件信息</span></div>"+
                         "<div class='box box6' onclick='khyyzk()'><img src='images/khyyzk.png'/><span>客户运营状况</span></div>"+
                         "<div class='box box7' onclick='wdzj()'><img src='images/wdzj.png'/><span>我的足迹</span></div>"+

@@ -44,7 +44,7 @@ function zczk_add(){
                                 "<td><textarea></textarea></td>"+
                             "</tr>"+
                         "</table>"+
-                        "<p><input type='button' class='btn btn-large' value='返回' onclick='khxxzlcj()'/></p>"+
+                        "<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
                     "</div>");
 $(".right").hide();
 $("#khgl").show();
@@ -94,7 +94,7 @@ function zczk_edit(){
                                 "<td><textarea></textarea></td>"+
                             "</tr>"+
                         "</table>"+
-                        "<p><input type='button' class='btn btn-large' value='返回' onclick='khxxzlcj()'/></p>"+
+                        "<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
                     "</div>");
 $(".right").hide();
 $("#khgl").show();
@@ -137,7 +137,7 @@ function fzqk_add(){
                                 "<td><textarea></textarea></td>"+
                             "</tr>"+
                         "</table>"+
-                        "<p><input type='button' class='btn btn-large' value='返回' onclick='khxxzlcj()'/></p>"+
+                        "<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
                     "</div>");
 $(".right").hide();
 $("#khgl").show();
@@ -179,8 +179,140 @@ function fzqk_edit(){
                                 "<td><textarea></textarea></td>"+
                             "</tr>"+
                         "</table>"+
-                        "<p><input type='button' class='btn btn-large' value='返回' onclick='khxxzlcj()'/></p>"+
+                        "<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
                     "</div>");
 $(".right").hide();
 $("#khgl").show();
+}
+//资产负债表-权益状况
+function qyzk_add(){
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>郝俊芝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
+                    "<div class='content'>"+
+                        "<table class='cpTable' id='csqy'>"+
+                            "<tr>"+                             
+                                "<th style='width:20%;'>初始权益</th>"+                         
+                                "<th style='text-align:left;'>" +
+                                    "<button class='btn btn-info my-btn' onclick='addTd(\"csqy\")'><img src='images/add.png'/></button>" +
+                                    "<button class='btn btn-info my-btn' onclick='removeTd(\"csqy\")'><img src='images/del.png'/></button>" +
+                                "</th>"+    
+                                "<th style='width:20%;'>期内利润</th>"+ 
+                                "<th style='text-align:left;'>" +
+                                    "<button class='btn btn-info my-btn' onclick='addTd(\"csqy\")'><img src='images/add.png'/></button>" +
+                                    "<button class='btn btn-info my-btn' onclick='removeTd(\"csqy\")'><img src='images/del.png'/></button>" +
+                                "</th>"+   
+                            "<tr>"+  
+                        "</table>"+
+                        "<table class='cpTable' id='dxzc'>"+
+                            "<th style='width:20%;'>期间内的资本注入</th>"+ 
+                            "<th style='text-align:left;'>" +
+                                "<button class='btn btn-info my-btn' onclick='addTd(\"dxzc\")'><img src='images/add.png'/></button>" +
+                                "<button class='btn btn-info my-btn' onclick='removeTd(\"dxzc\")'><img src='images/del.png'/></button>" +
+                            "</th>"+  
+                            "<th style='width:20%;'>期内提取的资金</th>"+                         
+                            "<th style='text-align:left;'>" +
+                                "<button class='btn btn-info my-btn' onclick='addTd(\"dxzc\")'><img src='images/add.png'/></button>" +
+                                "<button class='btn btn-info my-btn' onclick='removeTd(\"dxzc\")'><img src='images/del.png'/></button>" +
+                            "</th>"+
+                        "</table>"+
+                        "<table class='cpTable' id='szzj'>"+
+                            "</tr>"+  
+                                "<th style='width:20%;'>折旧/升值(-/+)</th>"+ 
+                                "<th style='text-align:left;'>" +
+                                    "<button class='btn btn-info my-btn' onclick='addTd(\"szzj\")'><img src='images/add.png'/></button>" +
+                                    "<button class='btn btn-info my-btn' onclick='removeTd(\"szzj\")'><img src='images/del.png'/></button>" +
+                                "</th>"+  
+                            "</tr>"+
+                        "</table>"+
+                        "<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
+                    "</div>");
+$(".right").hide();
+$("#khgl").show();
+}
+function qyzk_edit(){
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>郝俊芝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
+                    "<div class='content'>"+
+                        "<table class='cpTable' id='csqy'>"+
+                            "<tr>"+                             
+                                "<th style='width:20%;'>初始权益</th>"+                         
+                                "<th style='text-align:left;'>" +
+                                    "<button class='btn btn-info my-btn' onclick='addTd(\"csqy\")'><img src='images/add.png'/></button>" +
+                                    "<button class='btn btn-info my-btn' onclick='removeTd(\"csqy\")'><img src='images/del.png'/></button>" +
+                                "</th>"+    
+                                "<th style='width:20%;'>期内利润</th>"+ 
+                                "<th style='text-align:left;'>" +
+                                    "<button class='btn btn-info my-btn' onclick='addTd(\"csqy\")'><img src='images/add.png'/></button>" +
+                                    "<button class='btn btn-info my-btn' onclick='removeTd(\"csqy\")'><img src='images/del.png'/></button>" +
+                                "</th>"+   
+                            "<tr>"+  
+                        "</table>"+
+                        "<table class='cpTable' id='dxzc'>"+
+                            "<th style='width:20%;'>期间内的资本注入</th>"+ 
+                            "<th style='text-align:left;'>" +
+                                "<button class='btn btn-info my-btn' onclick='addTd(\"dxzc\")'><img src='images/add.png'/></button>" +
+                                "<button class='btn btn-info my-btn' onclick='removeTd(\"dxzc\")'><img src='images/del.png'/></button>" +
+                            "</th>"+  
+                            "<th style='width:20%;'>期内提取的资金</th>"+                         
+                            "<th style='text-align:left;'>" +
+                                "<button class='btn btn-info my-btn' onclick='addTd(\"dxzc\")'><img src='images/add.png'/></button>" +
+                                "<button class='btn btn-info my-btn' onclick='removeTd(\"dxzc\")'><img src='images/del.png'/></button>" +
+                            "</th>"+
+                        "</table>"+
+                        "<table class='cpTable' id='szzj'>"+
+                            "</tr>"+  
+                                "<th style='width:20%;'>折旧/升值(-/+)</th>"+ 
+                                "<th style='text-align:left;'>" +
+                                    "<button class='btn btn-info my-btn' onclick='addTd(\"szzj\")'><img src='images/add.png'/></button>" +
+                                    "<button class='btn btn-info my-btn' onclick='removeTd(\"szzj\")'><img src='images/del.png'/></button>" +
+                                "</th>"+  
+                            "</tr>"+
+                        "</table>"+
+                        "<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
+                    "</div>");
+$(".right").hide();
+$("#khgl").show();
+}
+//资产负债表-其他信息
+function zcfzqtxx_add(){
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>郝俊芝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
+            "<div class='content'>"+                
+                "<table class='cpTable'>"+
+                    "</tr>"+  
+                        "<td>销售额交叉检验</td>"+ 
+                        "<td><textarea style='width:80%;'></textarea></td>"+
+                    "</tr>"+
+                    "</tr>"+                               
+                        "<td>毛利润/成本交叉检验</td>"+ 
+                        "<td><textarea style='width:80%;'></textarea></td>"+
+                    "</tr>"+
+                    "</tr>"+                               
+                        "<td>其他交叉检验</td>"+ 
+                        "<td><textarea style='width:80%;'></textarea></td>"+
+                    "</tr>"+
+                "</table>"+
+                "<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
+            "</div>");
+$(".right").hide();
+$("#khgl").show();    
+}
+function zcfzqtxx_edit(){
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>郝俊芝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
+            "<div class='content'>"+                
+                "<table class='cpTable'>"+
+                    "</tr>"+  
+                        "<td>销售额交叉检验</td>"+ 
+                        "<td><textarea style='width:80%;'></textarea></td>"+
+                    "</tr>"+
+                    "</tr>"+                               
+                        "<td>毛利润/成本交叉检验</td>"+ 
+                        "<td><textarea style='width:80%;'></textarea></td>"+
+                    "</tr>"+
+                    "</tr>"+                               
+                        "<td>其他交叉检验</td>"+ 
+                        "<td><textarea style='width:80%;'></textarea></td>"+
+                    "</tr>"+
+                "</table>"+
+                "<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
+            "</div>");
+$(".right").hide();
+$("#khgl").show();    
 }

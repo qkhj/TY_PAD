@@ -381,6 +381,59 @@ function fcxx_edit(){
 $(".right").hide();
 $("#khgl").show();
 }
+//联系人信息
+function lxrxx_add(){
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>郝俊芝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
+                    "<div class='content'>"+
+                        "<table class='cpTable' id='lxrxx' style='text-align:center;'>"+
+                            "<tr>"+                             
+                                "<th>序号</th>"+                 
+                                "<th>联系人姓名</th>"+                   
+                                "<th>与客户关系</th>"+   
+                                "<th>联系人电话</th>"+  
+                            "</tr>"+  
+                            "<tr>"+  
+                                "<td>1</td>"+
+                                "<td><input type='text' value=''/></td>"+
+                                "<td><input type='text' value=''/></td>"+
+                                "<td><input type='text' value=''/></td>"+
+                            "</tr>"+
+                        "</table>"+
+                        "<p class='Left'>" +
+                            "<button class='btn btn-info btn-small' onclick='addTd(\"lxrxx\")'><img src='images/add.png'/></button>" +
+                            "<button class='btn btn-info btn-small' onclick='removeTd(\"lxrxx\")'><img src='images/del.png'/></button>" +
+                        "</p>"+
+                        "<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
+                    "</div>");
+    $(".right").hide();
+    $("#khgl").show();
+  }
+function lxrxx_edit(){
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>郝俊芝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
+                    "<div class='content'>"+
+                        "<table class='cpTable' id='lxrxx' style='text-align:center;'>"+
+                            "<tr>"+                             
+                                "<th>序号</th>"+                 
+                                "<th>联系人姓名</th>"+                   
+                                "<th>与客户关系</th>"+   
+                                "<th>联系人电话</th>"+  
+                            "</tr>"+  
+                            "<tr>"+  
+                                "<td>1</td>"+
+                                "<td><input type='text' value=''/></td>"+
+                                "<td><input type='text' value=''/></td>"+
+                                "<td><input type='text' value=''/></td>"+
+                            "</tr>"+
+                        "</table>"+
+                        "<p class='Left'>" +
+                            "<button class='btn btn-info btn-small' onclick='addTd(\"lxrxx\")'><img src='images/add.png'/></button>" +
+                            "<button class='btn btn-info btn-small' onclick='removeTd(\"lxrxx\")'><img src='images/del.png'/></button>" +
+                        "</p>"+
+                        "<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
+                    "</div>");
+    $(".right").hide();
+    $("#khgl").show();
+  }
 //居住信息
 function jzxx_add(){
     $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>郝俊芝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  

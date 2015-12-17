@@ -1,3 +1,145 @@
+//现金流表
+function xjlb_add(){	
+    window.scrollTo(0,0);//滚动条回到顶端
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>郝俊芝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
+                    "<div class='content'>"+
+                        "<table class='cpTable'>"+
+                            "<tr>"+                             
+                                "<td>期初现金</td>"+          
+                                "<td><input type='text' value=''/></td>"+
+                                "<td>现金销售额</td>"+          
+                                "<td><input type='text' value=''/></td>"+
+                            "</tr>"+
+                            "<tr>"+                             
+                                "<td>应收账款回收</td>"+          
+                                "<td><input type='text' value=''/></td>"+
+                                "<td>客户预付款</td>"+          
+                                "<td><input type='text' value=''/></td>"+
+                            "</tr>"+
+                            "<tr>"+                             
+                                "<td>现金购买原材料、服务、货物</td>"+          
+                                "<td><input type='text' value=''/></td>"+
+                                "<td>应付账款的支付</td>"+          
+                                "<td><input type='text' value=''/></td>"+
+                            "</tr>"+
+                            "<tr>"+                             
+                                "<td>购货的预付款项（原材料、服务费）</td>"+          
+                                "<td><input type='text' value=''/></td>"+
+                                "<td>固定费用支付</td>"+          
+                                "<td><input type='text' value=''/></td>"+
+                            "</tr>"+
+                            "<tr>"+                             
+                                "<td>固定资产出售流入</td>"+          
+                                "<td><input type='text' value=''/></td>"+
+                                "<td>其他流入</td>"+          
+                                "<td><input type='text' value=''/></td>"+
+                            "</tr>"+
+                            "<tr>"+                             
+                                "<td>购买新固定资产的支出</td>"+          
+                                "<td><input type='text' value=''/></td>"+
+                                "<td>建设和装修等的支出</td>"+          
+                                "<td><input type='text' value=''/></td>"+
+                            "</tr>"+
+                            "<tr>"+                             
+                                "<td>其他支出</td>"+          
+                                "<td><input type='text' value=''/></td>"+
+                                "<td>银行贷款</td>"+   
+                                "<td><input type='text' value=''/></td>"+
+                            "</tr>"+
+                            "<tr>"+                             
+                                "<td>其他借款</td>"+          
+                                "<td><input type='text' value=''/></td>"+
+                                "<td>偿还银行贷款本金以及利息</td>"+   
+                                "<td><input type='text' value=''/></td>"+
+                            "</tr>"+
+                            "<tr>"+                             
+                                "<td>偿还其他借款</td>"+          
+                                "<td><input type='text' value=''/></td>"+
+                                "<td>其他现金来源</td>"+   
+                                "<td><input type='text' value=''/></td>"+
+                            "</tr>"+
+                            "<tr>"+                             
+                                "<td>家庭开支</td>"+          
+                                "<td><input type='text' value=''/></td>"+
+                                "<td>私人使用资金</td>"+   
+                                "<td><input type='text' value=''/></td>"+
+                            "</tr>"+
+                        "</table>"+
+                        "<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
+                    "</div>");
+$(".right").hide();
+$("#khgl").show();
+}
+function xjlb_edit(){
+    $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>郝俊芝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
+                    "<div class='content'>"+
+                        "<table class='cpTable'>"+
+                            "<tr>"+                             
+                                "<td>期初现金</td>"+          
+                                "<td><input type='text' value=''/></td>"+
+                                "<td>现金销售额</td>"+          
+                                "<td><input type='text' value=''/></td>"+
+                            "</tr>"+
+                            "<tr>"+                             
+                                "<td>应收账款回收</td>"+          
+                                "<td><input type='text' value=''/></td>"+
+                                "<td>  客户预付款</td>"+          
+                                "<td><input type='text' value=''/></td>"+
+                            "</tr>"+
+                            "<tr>"+                             
+                                "<td> 现金购买原材料、服务、货物</td>"+          
+                                "<td><input type='text' value=''/></td>"+
+                                "<td> 应付账款的支付</td>"+          
+                                "<td><input type='text' value=''/></td>"+
+                            "</tr>"+
+                            "<tr>"+                             
+                                "<td> 购货的预付款项（原材料、服务费）</td>"+          
+                                "<td><input type='text' value=''/></td>"+
+                                "<td> 固定费用支付</td>"+          
+                                "<td><input type='text' value=''/></td>"+
+                            "</tr>"+
+                            "<tr>"+                             
+                                "<td>固定资产出售流入</td>"+          
+                                "<td><input type='text' value=''/></td>"+
+                                "<td>其他流入</td>"+          
+                                "<td><input type='text' value=''/></td>"+
+                            "</tr>"+
+                            "<tr>"+                             
+                                "<td>购买新固定资产的支出</td>"+          
+                                "<td><input type='text' value=''/></td>"+
+                                "<td>建设和装修等的支出</td>"+          
+                                "<td><input type='text' value=''/></td>"+
+                            "</tr>"+
+                            "<tr>"+                             
+                                "<td>其他支出</td>"+          
+                                "<td><input type='text' value=''/></td>"+
+                                "<td>银行贷款</td>"+   
+                                "<td><input type='text' value=''/></td>"+
+                            "</tr>"+
+                            "<tr>"+                             
+                                "<td>其他借款</td>"+          
+                                "<td><input type='text' value=''/></td>"+
+                                "<td>偿还银行贷款本金以及利息</td>"+   
+                                "<td><input type='text' value=''/></td>"+
+                            "</tr>"+
+                            "<tr>"+                             
+                                "<td>偿还其他借款</td>"+          
+                                "<td><input type='text' value=''/></td>"+
+                                "<td>其他现金来源</td>"+   
+                                "<td><input type='text' value=''/></td>"+
+                            "</tr>"+
+                            "<tr>"+                             
+                                "<td>家庭开支</td>"+          
+                                "<td><input type='text' value=''/></td>"+
+                                "<td>私人使用资金</td>"+   
+                                "<td><input type='text' value=''/></td>"+
+                            "</tr>"+
+                        "</table>"+
+                        "<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
+                    "</div>");
+$(".right").hide();
+$("#khgl").show();
+}
 //点货单
 function dhd_add(){
   $("#khgl").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>郝俊芝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320404165620223102<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
@@ -25,7 +167,7 @@ function dhd_add(){
                           "<button class='btn btn-info btn-small' onclick='addTd(\"dhd\")'><img src='images/add.png'/></button>" +
                           "<button class='btn btn-info btn-small' onclick='removeTd(\"dhd\")'><img src='images/del.png'/></button>" +
                       "</p>"+
-                      "<p><input type='button' class='btn btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
+                      "<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
                   "</div>");
   $(".right").hide();
   $("#khgl").show();
@@ -70,7 +212,7 @@ function dhd_edit(){
                             "<button class='btn btn-info btn-small' onclick='addTd(\"dhd\")'><img src='images/add.png'/></button>" +
                             "<button class='btn btn-info btn-small' onclick='removeTd(\"dhd\")'><img src='images/del.png'/></button>" +
                         "</p>"+
-                        "<p><input type='button' class='btn btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
+                        "<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
                     "</div>");
     $(".right").hide();
     $("#khgl").show();
@@ -108,7 +250,7 @@ function gdzcqd_add(){
                             "<button class='btn btn-info btn-small' onclick='addTd(\"gdzcqd\")'><img src='images/add.png'/></button>" +
                             "<button class='btn btn-info btn-small' onclick='removeTd(\"gdzcqd\")'><img src='images/del.png'/></button>" +
                         "</p>"+
-                        "<p><input type='button' class='btn btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
+                        "<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
                     "</div>");
     $(".right").hide();
     $("#khgl").show();
@@ -145,7 +287,7 @@ function gdzcqd_edit(){
                             "<button class='btn btn-info btn-small' onclick='addTd(\"gdzcqd\")'><img src='images/add.png'/></button>" +
                             "<button class='btn btn-info btn-small' onclick='removeTd(\"gdzcqd\")'><img src='images/del.png'/></button>" +
                         "</p>"+
-                        "<p><input type='button' class='btn btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
+                        "<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
                     "</div>");
     $(".right").hide();
     $("#khgl").show();
@@ -183,7 +325,7 @@ function ysyfqd_add(){
                             "<button class='btn btn-info btn-small' onclick='addTd(\"ysyfqd\")'><img src='images/add.png'/></button>" +
                             "<button class='btn btn-info btn-small' onclick='removeTd(\"ysyfqd\")'><img src='images/del.png'/></button>" +
                         "</p>"+
-                        "<p><input type='button' class='btn btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
+                        "<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
                     "</div>");
     $(".right").hide();
     $("#khgl").show();
@@ -220,7 +362,7 @@ function ysyfqd_edit(){
                             "<button class='btn btn-info btn-small' onclick='addTd(\"ysyfqd\")'><img src='images/add.png'/></button>" +
                             "<button class='btn btn-info btn-small' onclick='removeTd(\"ysyfqd\")'><img src='images/del.png'/></button>" +
                         "</p>"+
-                        "<p><input type='button' class='btn btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
+                        "<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
                     "</div>");
     $(".right").hide();
     $("#khgl").show();
@@ -258,7 +400,7 @@ function yfysqd_add(){
                             "<button class='btn btn-info btn-small' onclick='addTd(\"yfysqd\")'><img src='images/add.png'/></button>" +
                             "<button class='btn btn-info btn-small' onclick='removeTd(\"yfysqd\")'><img src='images/del.png'/></button>" +
                         "</p>"+
-                        "<p><input type='button' class='btn btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
+                        "<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
                     "</div>");
     $(".right").hide();
     $("#khgl").show();
@@ -295,7 +437,7 @@ function yfysqd_edit(){
                             "<button class='btn btn-info btn-small' onclick='addTd(\"yfysqd\")'><img src='images/add.png'/></button>" +
                             "<button class='btn btn-info btn-small' onclick='removeTd(\"yfysqd\")'><img src='images/del.png'/></button>" +
                         "</p>"+
-                        "<p><input type='button' class='btn btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
+                        "<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
                     "</div>");
     $(".right").hide();
     $("#khgl").show();
@@ -334,7 +476,7 @@ function fzxmmxqd_add(){
                           "<button class='btn btn-info btn-small' onclick='addTd(\"fzxmmxqd\")'><img src='images/add.png'/></button>" +
                           "<button class='btn btn-info btn-small' onclick='removeTd(\"fzxmmxqd\")'><img src='images/del.png'/></button>" +
                       "</p>"+
-                      "<p><input type='button' class='btn btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
+                      "<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
                   "</div>");
   $(".right").hide();
   $("#khgl").show();
@@ -372,7 +514,7 @@ function fzxmmxqd_edit(){
                             "<button class='btn btn-info btn-small' onclick='addTd(\"fzxmmxqd\")'><img src='images/add.png'/></button>" +
                             "<button class='btn btn-info btn-small' onclick='removeTd(\"fzxmmxqd\")'><img src='images/del.png'/></button>" +
                         "</p>"+
-                        "<p><input type='button' class='btn btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
+                        "<p><input type='button' class='btn btn-large btn-primary' value='保存并继续' onclick='khxxzlcj()'/></p>"+
                     "</div>");
     $(".right").hide();
     $("#khgl").show();
