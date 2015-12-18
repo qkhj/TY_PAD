@@ -7,8 +7,8 @@ function grxx_add(){
                           "<tr>"+                             
                               "<td style='width:25%;'>申请人性别</td>"+         
                               "<td>" +
-                                  "<label><input type='radio' name='sex'/>女</label>" +
-                                  "<label><input type='radio' name='sex'/>男</label>" +
+                                  "<label onclick='checkRadio(this)' class='radio'><input type='radio' name='sex'/>女</label>" +
+                                  "<label onclick='checkRadio(this)' class='radio'><input type='radio' name='sex'/>男</laabel>" +
                               "</td>"+
                           "</tr>"+
                           "<tr>"+                             
@@ -22,11 +22,11 @@ function grxx_add(){
                           "</tr>"+
                           "<tr>"+                             
                               "<td>户籍所在地</td>"+          
-                              "<td><input type='text' class='addinput'/></td>"+
+                              "<td><input type='text' class='long'/></td>"+
                           "</tr>"+
                           "<tr>"+                             
                               "<td>户籍详细地址</td>"+  
-                              "<td><input type='text' class='addinput'/></td>"+
+                              "<td><input type='text' class='long'/></td>"+
                           "</tr>"+
                           "<tr>"+                             
                               "<td>家庭住址</td>"+    
@@ -62,8 +62,8 @@ function grxx_edit(){
                             "<tr>"+                             
                                 "<td style='width:25%;'>申请人性别</td>"+         
                                 "<td>" +
-                                    "<label><input type='radio' name='sex' checked/>女</label>" +
-                                    "<label><input type='radio' name='sex'/>男</label>" +
+                                    "<label onclick='checkRadio(this)' class='radio'><input type='radio' name='sex'/>女</label>" +
+                                    "<label onclick='checkRadio(this)' class='radio'><input type='radio' name='sex'/>男</laabel>" +
                                 "</td>"+
                             "</tr>"+
                             "<tr>"+                             
@@ -81,11 +81,11 @@ function grxx_edit(){
                             "</tr>"+
                             "<tr>"+                             
                                 "<td>户籍详细地址</td>"+  
-                                "<td><input type='text' class='addinput' value='太原市柏杨树北二巷3栋3单元22号'/></td>"+
+                                "<td><input type='text' class='long' value='太原市柏杨树北二巷3栋3单元22号'/></td>"+
                             "</tr>"+
                             "<tr>"+                             
                                 "<td>家庭住址</td>"+    
-                                "<td><input type='text' class='addinput' value='太原市万柏林区卧虎山公路钢中路口裕丰惠泽园10号楼-3单元-604'/></td>"+
+                                "<td><input type='text' class='long' value='太原市万柏林区卧虎山公路钢中路口裕丰惠泽园10号楼-3单元-604'/></td>"+
                             "</tr>"+
                             "<tr>"+                             
                                 "<td>最高学位学历</td>"+           

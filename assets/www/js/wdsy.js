@@ -1,10 +1,10 @@
 //我的首页
 function mywdsy(){
     $("#wdsy").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>我的首页<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
-                    "<div class='content' style='padding-left:1em;position:absolute;height:680px;;background:#fff url(images/logo.jpg) no-repeat;background-position:bottom center;'>" +
-                        "<div class='box box2' onclick='mycpgl()'><img src='images/clkh.png'/><span>产品查询</span></div>"+
+                    "<div class='content' style='position:absolute;height:700px;right:0;left:0;background:#fff url(images/logo.jpg) no-repeat;background-position:bottom right;'>" +
+                        "<div class='box box2' onclick='mycpgl()'><img src='images/clkh.png'/><span>产品查询</span></div><div class='line'></div>"+
                         "<div class='box box5' onclick='khjjxx()'><img src='images/khjjxx.png'/><span>客户进件信息</span></div>"+
-                        "<div class='box box6' onclick='khyyzk()'><img src='images/khyyzk.png'/><span>客户运营状况</span></div>"+
+                        "<div class='box box6' onclick='khyyzk()'><img src='images/khyyzk.png'/><span>客户运营状况</span></div><div class='line'></div>"+
                         "<div class='box box7' onclick='wdzj()'><img src='images/wdzj.png'/><span>我的足迹</span></div>"+
                         "<div class='box box8' onclick='tz()'><img src='images/tz.png'/><span>通知</span></div>"+
                         "<div class='box box9' onclick='jljlxx()'><img src='images/jljlxx.png'/><span>奖励激励信息</span></div>"+
@@ -30,7 +30,7 @@ function khjjxx(){
                             "<input type='button' class='tab' value='补充进件' onclick='bcjj()'/>" +
                             "<input type='button' class='tab' value='拒绝进件' onclick='jjjj()'/>" +
                         "</p>" +
-                        "<p><input type='button' class='btn btn-large' value='返回' onclick='mywdsy()'/></p>" +
+                        "<p><input type='button' class='btn btn-large btn-primary' value='返回' onclick='mywdsy()'/></p>" +
                     "</div>");
     $(".right").hide();
     $("#wdsy").show();
@@ -65,7 +65,7 @@ function bcjj(){
                                 "<td><input type='button' class='btn btn-warning' value='是'/></td>"+
                             "</tr>"+
                         "</table>"+
-                        "<p><input type='button' class='btn btn-large' value='返回' onclick='khjjxx()'/></p>"+
+                        "<p><input type='button' class='btn btn-large btn-primary' value='返回' onclick='khjjxx()'/></p>"+
                     "</div>");
     $(".right").hide();
     $("#wdsy").show();
@@ -98,7 +98,7 @@ function jjjj(){
                                 "<td><img src='images/wrong.png'/></td>"+
                             "</tr>"+
                         "</table>"+
-                        "<p><input type='button' class='btn btn-large' value='返回' onclick='khjjxx()'/></p>"+
+                        "<p><input type='button' class='btn btn-large btn-primary' value='返回' onclick='khjjxx()'/></p>"+
                     "</div>");
     $(".right").hide();
     $("#wdsy").show();
@@ -137,7 +137,7 @@ function khyyzk(){
                                 "<td></td>"+
                             "</tr>"+
                         "</table>"+
-                        "<p><input type='button' class='btn btn-large' value='返回' onclick='mywdsy()'/></p>" +
+                        "<p><input type='button' class='btn btn-large btn-primary' value='返回' onclick='mywdsy()'/></p>" +
                     "</div>");
     $(".right").hide();
     $("#wdsy").show();
@@ -147,7 +147,7 @@ function wdzj(){
     $("#wdsy").html("<div class='title'><img src='images/show.png' onclick='showNav()'/>李丽&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00001<img class='Right' src='images/dc.png' onclick='dc()'/></div>"+  
                     "<div class='content'>" +
                         "<div class='map'>地图</div>"+
-                        "<p><input type='button' class='btn btn-large' value='返回' onclick='mywdsy()'/></p>" +
+                        "<p><input type='button' class='btn btn-large btn-primary' value='返回' onclick='mywdsy()'/></p>" +
                     "</div>");
     $(".right").hide();
     $("#wdsy").show();
@@ -190,7 +190,7 @@ function tz(){
                                 "<td>1<input type='button' class='btn btn-info' value='查看' onclick='khzlbgtz()'/></td>"+
                             "</tr>"+
                         "</table>"+
-                        "<p><input type='button' class='btn btn-large' value='返回' onclick='mywdsy()'/></p>" +
+                        "<p><input type='button' class='btn btn-large btn-primary' value='返回' onclick='mywdsy()'/></p>" +
                     "</div>");
     $(".right").hide();
     $("#wdsy").show();
@@ -217,7 +217,7 @@ function sdhtz(){
                             "<button class='btn btn-primary btn-success'><img src='images/yes.png'/> 确认</button>" +
                             "<button class='btn btn-primary btn-danger'><img src='images/no.png'/> 拒绝</button>" +
                         "</p>" +
-                        "<p><input type='button' class='btn btn-large' value='返回' onclick='tz()'/></p>" +
+                        "<p><input type='button' class='btn btn-large btn-primary' value='返回' onclick='tz()'/></p>" +
                     "</div>");
     $(".right").hide();
     $("#wdsy").show();
@@ -244,7 +244,7 @@ function pxtz(){
                                 "<td></td>"+
                             "</tr>"+
                         "</table>"+
-                        "<p><input type='button' class='btn btn-large' value='返回' onclick='tz()'/></p>" +
+                        "<p><input type='button' class='btn btn-large btn-primary' value='返回' onclick='tz()'/></p>" +
                     "</div>");
     $(".right").hide();
     $("#wdsy").show();
@@ -271,7 +271,7 @@ function fpjjtz(){
                                 "<td></td>"+
                             "</tr>"+
                         "</table>"+
-                        "<p><input type='button' class='btn btn-large' value='返回' onclick='tz()'/></p>" +
+                        "<p><input type='button' class='btn btn-large btn-primary' value='返回' onclick='tz()'/></p>" +
                     "</div>");
     $(".right").hide();
     $("#wdsy").show();
@@ -294,7 +294,7 @@ function fxsxtz(){
                                 "<td></td>"+
                             "</tr>"+
                         "</table>"+
-                        "<p><input type='button' class='btn btn-large' value='返回' onclick='tz()'/></p>" +
+                        "<p><input type='button' class='btn btn-large btn-primary' value='返回' onclick='tz()'/></p>" +
                     "</div>");
     $(".right").hide();
     $("#wdsy").show();
@@ -323,7 +323,7 @@ function cskhtz(){
                                 "<td></td>"+
                             "</tr>"+
                         "</table>"+
-                        "<p><input type='button' class='btn btn-large' value='返回' onclick='tz()'/></p>" +
+                        "<p><input type='button' class='btn btn-large btn-primary' value='返回' onclick='tz()'/></p>" +
                     "</div>");
     $(".right").hide();
     $("#wdsy").show();
@@ -350,7 +350,7 @@ function khzlbgtz(){
                                 "<td></td>"+
                             "</tr>"+
                         "</table>"+
-                        "<p><input type='button' class='btn btn-large' value='返回' onclick='tz()'/></p>" +
+                        "<p><input type='button' class='btn btn-large btn-primary' value='返回' onclick='tz()'/></p>" +
                     "</div>");
     $(".right").hide();
     $("#wdsy").show();
@@ -370,7 +370,7 @@ function jljlxx(){
                                 "<td>8</td>"+
                             "</tr>"+
                         "</table>"+
-                        "<p><input type='button' class='btn btn-large' value='返回' onclick='mywdsy()'/></p>" +
+                        "<p><input type='button' class='btn btn-large btn-primary' value='返回' onclick='mywdsy()'/></p>" +
                     "</div>");
     $(".right").hide();
     $("#wdsy").show();

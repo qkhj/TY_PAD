@@ -43,7 +43,7 @@ function qyjbxx_add(){
                           "</tr>"+
                           "<tr>"+                             
                               "<td>地址</td>"+    
-                              "<td><input type='text' class='addinput'/></td>"+
+                              "<td><input type='text' class='long'/></td>"+
                           "</tr>"+
                           "<tr>"+                             
                               "<td>电话</td>"+    
@@ -98,7 +98,7 @@ function qyjbxx_edit(){
                             "</tr>"+
                             "<tr>"+                             
                                 "<td>地址</td>"+    
-                                "<td><input type='text' class='addinput' value='尖草坪街48号（北院）128幢五单元1号房'/></td>"+
+                                "<td><input type='text' class='long' value='尖草坪街48号（北院）128幢五单元1号房'/></td>"+
                             "</tr>"+
                             "<tr>"+                             
                                 "<td>电话</td>"+    
